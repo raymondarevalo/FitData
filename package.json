@@ -1,0 +1,22 @@
+{
+  "name": "fitdata",
+  "version": "1.0.0",
+  "description": "App for COGS120/CSE170",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raymondarevalo/FitData.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raymondarevalo/FitData/issues"
+  },
+  "homepage": "https://github.com/raymondarevalo/FitData#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
