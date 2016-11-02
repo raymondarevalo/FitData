@@ -1,0 +1,82 @@
+{
+  "researchquestions": [
+    {
+      "status": "incomplete",
+      "question": "How many calories does a 1 mile run burn?",
+      "category": "fitness",
+      "researcher": "yes",
+      "name": "Dr. McLove"
+    }
+    {
+      "status": "incomplete",
+      "question": "What worries you about weight gain?",
+      "category": "weight-gain",
+      "researcher": "yes",
+      "name": "Dr. Skinny"
+    }
+    {
+      "status": "incomplete",
+      "question": "What do you do to lose weight?",
+      "category": "weight-loss",
+      "researcher": "yes",
+      "name": "Dr. McLove"
+    }
+    {
+      "status": "incomplete",
+      "question": "What should I change from my daily life to improve it on the long run?",
+      "category": "lifestyle",
+      "researcher": "no",
+      "name": "Rick Smith"
+    }
+    {
+      "status": "incomplete",
+      "question": "Do people aim for a healthy lifestyle?",
+      "category": "lifestyle",
+      "researcher": "yes",
+      "name": "Dr. Hans"
+    }
+    {
+      "status": "incomplete",
+      "question": "How many push ups do I have to do in order to get big?",
+      "category": "fitness",
+      "researcher": "no",
+      "name": "Raymond Arevalo"
+    }
+    {
+      "status": "incomplete",
+      "question": "What's the fastest way to losing weight?",
+      "category": "weight-loss",
+      "researcher": "no",
+      "name": "anonymous"
+    }
+    {
+      "status": "incomplete",
+      "question": "What's the fastest way to get big? but in a healthy way",
+      "category": "weight-gain",
+      "researcher": "no",
+      "name": "Shreeman"
+    }
+    {
+      "status": "incomplete",
+      "question": "How many hours do people exercise on average per week?",
+      "category": "fitness",
+      "researcher": "yes",
+      "name": "Dr. Skinny"
+    }
+    {
+      "status": "incomplete",
+      "question": "Do people want to exercise?",
+      "category": "fitness",
+      "researcher": "no",
+      "name": "Raymond Arevalo"
+    }
+  ],
+  "user": {
+    "personalquestions": [
+
+    ],
+    "contributions": [
+
+    ]
+  }
+}

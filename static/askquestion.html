@@ -25,6 +25,32 @@
   </nav>
 
   <h2>Ask Question</h2>
+  <form id ="askquestionForm">
+    <!-- Choose a category -->
+    <div class = "form-group">
+      <label for="exampleSelect1">Categories</label>
+      <select class = "form-control" id = "exampleSelect1" name ="categories">
+        <option value="weight-loss">Weight Loss</option>
+        <option value="weight-gain">Weight Gain</option>
+        <option value="exercise">Exercise</option>
+        <option value="lifestyle">Lifestyle</option>
+      </select>
+    </div>
+    <div class = "form-group">
+        <label for ="exampleTextArea">Main Research Question</label>
+        <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+    </div>
+
+    <button id="addSRQId" type ="button" value ="addSRQ" onclick="addSRQ()">Add Sub Research Question</button>
+    <button type="submit" value ="done" class="btn btn-primary">Submit</button>
+  </form>
+  <!-- Choose a category -->
+
+  <!-- Main research question -->
+
+  <!-- Subresearch quesiton -->
+
+
   <a href = "/index.html">  <button type="button" class="btn btn-danger">Quit</button></a>
   <a href = "/index.html">  <button type="button" class="btn btn-default">Save & Quit</button></a>
   <a href = "/reviewquestion.html">  <button type="button" class="btn btn-default">Done Creating a Question</button></a>
@@ -32,4 +58,5 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  <script src = "js/askquestion.js"></script>
 </body>
