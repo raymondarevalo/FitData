@@ -19,6 +19,7 @@ var resumeanswer = require('./routes/resumeanswer');
 var resumequestion = require('./routes/resumequestion');
 var previouscontribution = require('./routes/previouscontribution');
 var submitquestion = require('./routes/submitquestion');
+var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
 
@@ -64,6 +65,8 @@ app.get('/previouscontribution', previouscontribution.view);
 
 /* Submit question */
 app.get('/submitquestion', submitquestion.addFriend);
+
+app.get('/login', login.view);
 // Example route
 // app.get('/users', user.list);
 

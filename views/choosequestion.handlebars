@@ -25,11 +25,12 @@
   </nav>
 
   <h2>Select a Topic/Question</h2>
-
+  <br> <br>
 
   <!-- ******************************************************************* -->
   {{#questions}}
   <h3>Question: {{question}}</h3>
+  <p>Category: {{category}}</p>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal{{index}}">
     Answer
@@ -59,7 +60,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
+          <a href = "/">  <button type="button" class="btn btn-default">Submit</button></a>
         </div>
       </div>
     </div>

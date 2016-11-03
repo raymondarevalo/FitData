@@ -23,9 +23,11 @@
       </ul>
     </div>
   </nav>
-
+  <h2> Resume answering question</h2>
+  <br> <br>
   {{#responses}}
-    <h1>Question: {{question}}</h1>
+    <h3>Question: {{question}}</h3>
+    <p>Category: {{category}}</p>
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#resumeModal{{index}}">
       Resume
     </button>
