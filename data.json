@@ -1,34 +1,107 @@
 {
-	"friends": [
-		{
-			"name": "Doug Engelbart",
-			"description": "Has awesome pet mice",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"
-		},
-		{
-			"name": "Ivan Sutherland",
-			"description": "Great at sketching",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"
-		},
-		{
-			"name": "Lucy Suchman",
-			"description": "Loves Trukese navigators",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"
-		},
-		{
-			"name": "Vannevar Bush",
-			"description": "Has stellar associative memory",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg"
-		},
-		{
-			"name": "Grace Hopper",
-			"description": "Only friend with a Navy ship named after them",
-			"imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg/800px-Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg"
-		},
-		{
-			"name": "Allen Newell",
-			"description": "Really into psychology",
-			"imageURL": "http://amturing.acm.org/images/lg_aw/3167755.jpg"
-		}
-	]
+  "researchquestions": [
+    {
+      "status": null,
+      "question": "How many calories does a 1 mile run burn?",
+      "category": "fitness",
+      "researcher": "yes",
+      "name": "Dr. McLove"
+    },
+    {
+      "status": null,
+      "question": "What worries you about weight gain?",
+      "category": "weight-gain",
+      "researcher": "yes",
+      "name": "Dr. Skinny"
+    },
+    {
+      "status": null,
+      "question": "What do you do to lose weight?",
+      "category": "weight-loss",
+      "researcher": "yes",
+      "name": "Dr. McLove"
+    },
+    {
+      "status": null,
+      "question": "What should I change from my daily life to improve it on the long run?",
+      "category": "lifestyle",
+      "researcher": "no",
+      "name": "Rick Smith"
+    },
+    {
+      "status": null,
+      "question": "Do people aim for a healthy lifestyle?",
+      "category": "lifestyle",
+      "researcher": "yes",
+      "name": "Dr. Hans"
+    },
+    {
+      "status": null,
+      "question": "How many push ups do I have to do in order to get big?",
+      "category": "fitness",
+      "researcher": "no",
+      "name": "Raymond Arevalo"
+    },
+    {
+      "status": null,
+      "question": "What's the fastest way to losing weight?",
+      "category": "weight-loss",
+      "researcher": "no",
+      "name": "anonymous"
+    },
+    {
+      "status": null,
+      "question": "What's the fastest way to get big? but in a healthy way",
+      "category": "weight-gain",
+      "researcher": "no",
+      "name": "Shreeman"
+    },
+    {
+      "status": null,
+      "question": "How many hours do people exercise on average per week?",
+      "category": "fitness",
+      "researcher": "yes",
+      "name": "Dr. Skinny"
+    },
+    {
+      "status": null,
+      "question": "Do people want to exercise?",
+      "category": "fitness",
+      "researcher": "no",
+      "name": "Raymond Arevalo"
+    }
+  ],
+  "user": {
+    "personalquestions": [
+      {
+        "categories": "exercise",
+        "question0": "asdf"
+      },
+      {
+        "categories": "lifestyle",
+        "question0": "Do I really need to work out to be hot?",
+        "question1": "ALSdfjsd;lkjf"
+      },
+      {
+        "categories": "lifestyle",
+        "question0": "Do I really need to work out to be hot?",
+        "question1": "ALSdfjsd;lkjf"
+      },
+      {
+        "categories": "lifestyle",
+        "question0": "Do I really need to work out to be hot?",
+        "question1": "ALSdfjsd;lkjf"
+      },
+      {
+        "categories": "lifestyle",
+        "question0": "Do I really need to work out to be hot?",
+        "question1": "ALSdfjsd;lkjf"
+      },
+      {
+        "categories": "weight-loss",
+        "question0": "Will losing weight make me happy?"
+      }
+    ],
+    "contributions": []
+  }
 }

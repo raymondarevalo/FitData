@@ -2,7 +2,11 @@
 //var file = '/sample.json';
 
 
+
+
 /* Submit and save the data once you click submit */
+
+/*
 $("#askquestionForm").on('submit', function(e) {
   // prevent default submit action
   e.preventDefault();
@@ -26,6 +30,7 @@ $("#askquestionForm").on('submit', function(e) {
   console.log("After writeFileSync <--");
 });
 
+*/
 
 /* Adds sub research question textbox to form */
 function addSRQ () {

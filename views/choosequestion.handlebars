@@ -29,7 +29,14 @@
   <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
   <a href = "/answerquestion">  <button type="button" class="btn btn-default">Answer Question</button></a>
 
-
+  <h1> Red:  </h1>
+  {{#questions}}
+    {{#unless status}}
+    <h1>{{status}}</h1>
+    <h2>{{question}}</h1>
+    <h1>{{category}}</h1>
+    {{/unless}}
+  {{/questions}}
 
   <!-- FOOTER -->
 
