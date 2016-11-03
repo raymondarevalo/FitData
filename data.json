@@ -3,6 +3,14 @@
     {
       "status": null,
       "question": "How many calories does a 1 mile run burn?",
+      "subquestions": [
+        {
+          "quesiton":"How fast can I run?"
+        },
+        {
+          "question":"Does running faster burn more calories?"
+        }
+      ],
       "category": "fitness",
       "researcher": "yes",
       "name": "Dr. McLove",
@@ -140,6 +148,16 @@
         "status": null,
         "question": "Does skinnier hands mean I should eat more?",
         "reply": "Noooo. Are you kidding me? Be yourself and stop worring about that.",
+        "subquestions" : [
+          {
+            "question": "",
+            "reply":""
+          },
+          {
+            "question": "",
+            "reply":""
+          }
+        ],
         "category": "weight-gain",
         "researcher": "no",
         "name": "Jon Jean",
@@ -165,6 +183,16 @@
         "status": null,
         "question": "Do people really like their current weight status?",
         "reply": "Nope. To be honest I myself am not satisfied with my current weight. Don't we all want to be a little skinnier or fatter?",
+        "subquestions" : [
+          {
+            "question": "",
+            "reply":""
+          },
+          {
+            "question": "",
+            "reply":""
+          }
+        ],
         "category": "lifestyle",
         "researcher": "yes",
         "name": "Dr. Hans",
