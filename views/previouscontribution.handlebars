@@ -23,7 +23,72 @@
       </ul>
     </div>
   </nav>
-  <h2>Select Previous Contribution</h2>
+  <!-- ********************************************************************* -->
+  <h1>Previous Answers<h1>
+    {{#answers}}
+    <h3>Question: {{question}}</h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#previousAnswer{{index}}">
+      View more
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="previousAnswer{{index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Previous {{category}} question</h4>
+          </div>
+          <div class="modal-body">
+
+            <!-- Question -->
+            <h5>Q: {{question}}</h5>
+            <p> A: {{reply}}</p>
+            <!-- breakdown -->
+            <h5>Carbs </h5>
+            <p>{{breakdown.carbs}}<p>
+            <h5>Proteins </h5>
+            <p>{{breakdown.protein}}<p>
+            <h5>Transfat </h5>
+            <p>{{breakdown.transfat}}<p>
+            <h5>Sugar </h5>
+            <p>{{breakdown.sugar}}<p>
+            <!-- personal info -->
+            <h5>Height</h5>
+            <p>{{self.height}}</p>
+            <h5>Weight</h5>
+            <p>{{self.weight}}</p>
+            <h5>Body fat</h5>
+            <p>{{self.bodyfat}}</p>
+            <h5>Age</h5>
+            <p>{{self.age}}</p>
+            <h5>ethnicity</h5>
+            <p>{{self.ethnicity}}</p>
+
+            <!-- other -->
+            <h5>Sent to</h5>
+            <p>{{send}}</p>
+            <h5>Comments</h5>
+            <p>{{comments}}</p>
+            <h5>Identity</h5>
+            <p>{{identity}}</p>
+
+            <h5>Asked by: {{name}}</h5>
+            <h5>Researcher: {{researcher}}</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    {{/answers}}
+  <!-- ********************************************************************* -->
+  <br><br>
   <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
   <!--
   <a href = "/finishedcontribution.html">  <button type="button" class="btn btn-default">View</button></a>

@@ -5,70 +5,80 @@
       "question": "How many calories does a 1 mile run burn?",
       "category": "fitness",
       "researcher": "yes",
-      "name": "Dr. McLove"
+      "name": "Dr. McLove",
+      "index": 0
     },
     {
       "status": null,
       "question": "What worries you about weight gain?",
       "category": "weight-gain",
       "researcher": "yes",
-      "name": "Dr. Skinny"
+      "name": "Dr. Skinny",
+      "index": 1
     },
     {
       "status": null,
       "question": "What do you do to lose weight?",
       "category": "weight-loss",
       "researcher": "yes",
-      "name": "Dr. McLove"
+      "name": "Dr. McLove",
+      "index": 2
     },
     {
       "status": null,
       "question": "What should I change from my daily life to improve it on the long run?",
       "category": "lifestyle",
       "researcher": "no",
-      "name": "Rick Smith"
+      "name": "Rick Smith",
+      "index": 3
     },
     {
       "status": null,
       "question": "Do people aim for a healthy lifestyle?",
       "category": "lifestyle",
       "researcher": "yes",
-      "name": "Dr. Hans"
+      "name": "Dr. Hans",
+      "index": 4
     },
     {
       "status": null,
       "question": "How many push ups do I have to do in order to get big?",
       "category": "fitness",
       "researcher": "no",
-      "name": "Raymond Arevalo"
+      "name": "Raymond Arevalo",
+      "index": 5
     },
     {
       "status": null,
       "question": "What's the fastest way to losing weight?",
       "category": "weight-loss",
       "researcher": "no",
-      "name": "anonymous"
+      "name": "anonymous",
+      "index": 6
     },
     {
       "status": null,
       "question": "What's the fastest way to get big? but in a healthy way",
       "category": "weight-gain",
       "researcher": "no",
-      "name": "Shreeman"
+      "name": "Shreeman",
+      "index": 7
     },
     {
       "status": null,
       "question": "How many hours do people exercise on average per week?",
       "category": "fitness",
       "researcher": "yes",
-      "name": "Dr. Skinny"
+      "name": "Dr. Skinny",
+      "index": 8
     },
     {
       "status": null,
       "question": "Do people want to exercise?",
       "category": "fitness",
       "researcher": "no",
-      "name": "Raymond Arevalo"
+      "name": "Raymond Arevalo",
+      "index": 9
     }
   ],
   "user": {
@@ -100,8 +110,72 @@
       {
         "categories": "weight-loss",
         "question0": "Will losing weight make me happy?"
+      },
+      {
+        "categories": "weight-loss",
+        "question0": "sdf"
+      },
+      {
+        "categories": "weight-loss",
+        "question0": "fjfklasdf",
+        "question1": "blah blah blah"
+      },
+      {
+        "categories": "exercise",
+        "question0": "What is up?"
       }
     ],
-    "contributions": []
+    "contributions": [
+      {
+        "index": 0,
+        "status": null,
+        "question": "Does skinnier hands mean I should eat more?",
+        "reply": "Noooo. Are you kidding me? Be yourself and stop worring about that.",
+        "category": "weight-gain",
+        "researcher": "no",
+        "name": "Jon Jean",
+        "breakdown": {
+          "carbs": "40",
+          "protein": "33",
+          "transfat": "3000",
+          "sugar": "1897"
+        },
+        "self": {
+          "height": "5 feet",
+          "weight": "170 lbs",
+          "bodyfat": "too round to check",
+          "age": "9",
+          "ethnicity": "white"
+        },
+        "send": "Dr. Love, Raymond Arevalo, Dr. Hans",
+        "comments": "Go get a life and stop posting on this web app.",
+        "identity": "anonymous"
+      },
+      {
+        "index": 1,
+        "status": null,
+        "question": "Do people really like their current weight status?",
+        "reply": "Nope. To be honest I myself am not satisfied with my current weight. Don't we all want to be a little skinnier or fatter?",
+        "category": "lifestyle",
+        "researcher": "yes",
+        "name": "Dr. Hans",
+        "breakdown": {
+          "carbs": "40",
+          "protein": "33",
+          "transfat": "3000",
+          "sugar": "1897"
+        },
+        "self": {
+          "height": "5 feet",
+          "weight": "170 lbs",
+          "bodyfat": "too round to check",
+          "age": "9",
+          "ethnicity": "white"
+        },
+        "send": "Dr. Love, Raymond Arevalo, Dr. Hans",
+        "comments": "Go get a life and stop posting on this web app.",
+        "identity": "anonymous"
+      }
+    ]
   }
 }

@@ -26,17 +26,50 @@
 
   <h2>Select a Topic/Question</h2>
 
-  <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
-  <a href = "/answerquestion">  <button type="button" class="btn btn-default">Answer Question</button></a>
 
-  <h1> Red:  </h1>
+  <!-- ******************************************************************* -->
   {{#questions}}
-    {{#unless status}}
-    <h1>{{status}}</h1>
-    <h2>{{question}}</h1>
-    <h1>{{category}}</h1>
-    {{/unless}}
+  <h3>Question: {{question}}</h3>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal{{index}}">
+    Answer
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal{{index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Answer {{category}} question</h4>
+        </div>
+        <div class="modal-body">
+          <!-- 999999999999 -->
+          <form>
+            <div class = "form-group">
+              <p for ="exampleTextArea">Main Research Question: {{question}}</p>
+              <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+          </form>
+          <h5>Asked by: {{name}}</h5>
+          <h5>Researcher: {{researcher}}</h5>
+          <!-- 999999999999 -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
   {{/questions}}
+  <!-- ******************************************************************* -->
+  <br> <br>
+  <a href = "/">  <button type="button" class="btn btn-default">Submit</button></a>
+
 
   <!-- FOOTER -->
 
