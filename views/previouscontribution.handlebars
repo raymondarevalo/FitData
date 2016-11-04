@@ -47,8 +47,13 @@
           <div class="modal-body">
 
             <!-- Question -->
-            <h5>Q: {{question}}</h5>
-            <p> A: {{reply}}</p>
+            <h2>Q: {{question}}</h2>
+            <br> <br>
+
+            {{#subquestions}}
+            <h5>Subquestion: {{question}}</h5>
+            <p>{{reply}}</p>
+            {{/subquestions}}
             <!-- breakdown -->
             <h5>Carbs </h5>
             <p>{{breakdown.carbs}}<p>

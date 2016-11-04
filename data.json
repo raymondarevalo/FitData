@@ -2,160 +2,192 @@
   "researchquestions": [
     {
       "status": null,
-      "question": "How many calories does a 1 mile run burn?",
+      "question": "What is the most effective rest interval for maximum muscle hypertrophy during weightlifting?",
       "subquestions": [
         {
-          "quesiton":"How fast can I run?"
+          "question": "List weightlifts that you perform and your rest intervals between 8-10 repetition sets."
         },
         {
-          "question":"Does running faster burn more calories?"
+          "question": "What is your body fat percentage?"
+        },
+        {
+          "question": "How much water do you consume during an average workout?"
+        },
+        {
+          "question": "If any, what pre-workout and post-workout supplements do you usually take?"
+        },
+        {
+          "question": "How long have you been consistently lifting weights?"
+        },
+        {
+          "question": "What is your age?"
+        },
+        {
+          "question": "What is your height in inches?"
+        },
+        {
+          "question": "What is your weight in pounds?"
         }
       ],
       "category": "fitness",
       "researcher": "yes",
-      "name": "Dr. McLove",
+      "name": "Dr. Williams",
       "index": 0
     },
     {
       "status": null,
-      "question": "What worries you about weight gain?",
+      "question": "How do eating schedules affect weight gain?",
+      "subquestions": [
+        {
+          "question": "How many meals including snacks do you consume daily on average?"
+        },
+        {
+          "question": "List the average time of when you consume each meal."
+        },
+        {
+          "question": "How many calories do you consume daily on average?"
+        },
+        {
+          "question": "Are you consistently involved in an intense cardio exercise program?"
+        },
+        {
+          "question": "What is your age?"
+        },
+        {
+          "question": "What is your heightin inches?"
+        },
+        {
+          "question": "What is your weight in pounds?"
+        },
+        {
+          "question": "What is your body-fat percentage?"
+        }
+      ],
       "category": "weight-gain",
       "researcher": "yes",
-      "name": "Dr. Skinny",
+      "name": "Dr. Smith",
       "index": 1
     },
     {
       "status": null,
-      "question": "What do you do to lose weight?",
-      "category": "weight-loss",
+      "question": "How do sleep levels vary by age group?",
+      "subquestions": [
+        {
+          "question": "How many hours do you sleep on average per night?"
+        },
+        {
+          "question": "How many hours do you take naps daily on average?"
+        },
+        {
+          "question": "Are you currently enrolled in school/college?"
+        },
+        {
+          "question": "What is your age?"
+        }
+      ],
+      "category": "sleep",
       "researcher": "yes",
-      "name": "Dr. McLove",
+      "name": "Dr. Allen",
       "index": 2
     },
     {
       "status": null,
-      "question": "What should I change from my daily life to improve it on the long run?",
+      "question": "Do stress levels affect daily productivity?",
+      "subquestions": [
+        {
+          "question": "If known, what is your blood pressure level?"
+        },
+        {
+          "question": "Do you have any medical conditions due to stress?"
+        },
+        {
+          "question": "How many hours a day do you work and/or go to school?"
+        },
+        {
+          "question": "How many hours a day do you spend watching TV, using social media, doing other leisure activities etc.?"
+        },
+        {
+          "question": "How much caffeine do you consume daily?"
+        },
+        {
+          "question": "What is your age?"
+        }
+      ],
       "category": "lifestyle",
-      "researcher": "no",
-      "name": "Rick Smith",
+      "researcher": "yes",
+      "name": "Dr. Brown",
       "index": 3
-    },
-    {
-      "status": null,
-      "question": "Do people aim for a healthy lifestyle?",
-      "category": "lifestyle",
-      "researcher": "yes",
-      "name": "Dr. Hans",
-      "index": 4
-    },
-    {
-      "status": null,
-      "question": "How many push ups do I have to do in order to get big?",
-      "category": "fitness",
-      "researcher": "no",
-      "name": "Raymond Arevalo",
-      "index": 5
-    },
-    {
-      "status": null,
-      "question": "What's the fastest way to losing weight?",
-      "category": "weight-loss",
-      "researcher": "no",
-      "name": "anonymous",
-      "index": 6
-    },
-    {
-      "status": null,
-      "question": "What's the fastest way to get big? but in a healthy way",
-      "category": "weight-gain",
-      "researcher": "no",
-      "name": "Shreeman",
-      "index": 7
-    },
-    {
-      "status": null,
-      "question": "How many hours do people exercise on average per week?",
-      "category": "fitness",
-      "researcher": "yes",
-      "name": "Dr. Skinny",
-      "index": 8
-    },
-    {
-      "status": null,
-      "question": "Do people want to exercise?",
-      "category": "fitness",
-      "researcher": "no",
-      "name": "Raymond Arevalo",
-      "index": 9
     }
   ],
   "user": {
     "personalquestions": [
       {
         "categories": "exercise",
-        "question0": "asdf"
+        "question0": "Do cardio workouts affect hormonal levels for men and women?",
+        "question1": "Are you male or female?",
+        "question2": "How often do you do cardio exercises?",
+        "question3": "Have you had any hormonal changes in the past?",
+        "question4": "If so, what hormonal changes and when?",
+        "question5": "What is your age?"
       },
       {
         "categories": "lifestyle",
-        "question0": "Do I really need to work out to be hot?",
-        "question1": "ALSdfjsd;lkjf"
-      },
-      {
-        "categories": "lifestyle",
-        "question0": "Do I really need to work out to be hot?",
-        "question1": "ALSdfjsd;lkjf"
-      },
-      {
-        "categories": "lifestyle",
-        "question0": "Do I really need to work out to be hot?",
-        "question1": "ALSdfjsd;lkjf"
-      },
-      {
-        "categories": "lifestyle",
-        "question0": "Do I really need to work out to be hot?",
-        "question1": "ALSdfjsd;lkjf"
-      },
-      {
-        "categories": "weight-loss",
-        "question0": "Will losing weight make me happy?"
-      },
-      {
-        "categories": "weight-loss",
-        "question0": "sdf"
-      },
-      {
-        "categories": "weight-loss",
-        "question0": "fjfklasdf",
-        "question1": "blah blah blah"
+        "question0": "How do long-term relationships affect stress levels?",
+        "question1": "Are you currently in a relationship?",
+        "question2": "If so, how long has this been lasting?",
+        "question3": "What is the longest relationship you've been in?",
+        "question4": "Do you have any stress-related or blood pressure-related medical issues?",
+        "question5": "What is your age?"
       },
       {
         "categories": "exercise",
-        "question0": "What is up?"
+        "question0": "djkdsfjklsd",
+        "question1": "adkl/dfsjklds"
       },
       {
         "categories": "weight-loss",
-        "question0": ""
-      },
-      {
-        "categories": "weight-loss",
-        "question0": "ljksadfdasj;",
-        "question1": "tyyui"
+        "question0": "Does swimming lose weight?",
+        "question1": "How many yards do I need to run to burn a cheeseburger?"
       }
     ],
     "contributions": [
       {
         "index": 0,
         "status": null,
-        "question": "Does skinnier hands mean I should eat more?",
-        "reply": "Noooo. Are you kidding me? Be yourself and stop worring about that.",
-        "subquestions" : [
+        "question": "Are there any cardiovascular health risks from so-called healthy muscle gain?",
+        "reply": "Potentially",
+        "subquestions": [
           {
-            "question": "",
-            "reply":""
+            "question": "How often do you exercise (weightlift) per week?",
+            "reply": "3 days a week for 1 hour each day"
           },
           {
-            "question": "",
-            "reply":""
+            "question": "How many grams of protein do you consume daily?",
+            "reply": "80 grams"
+          },
+          {
+            "question": "How many calories do you consume daily?",
+            "reply": "3100"
+          },
+          {
+            "question": "Do you have any heart conditions caused by diet issues?",
+            "reply": ""
+          },
+          {
+            "question": "What is your age",
+            "reply": ""
+          },
+          {
+            "question": "What is your height in inches?",
+            "reply": ""
+          },
+          {
+            "question": "What is your weight in pounds?",
+            "reply": ""
+          },
+          {
+            "question": "What is your body-fat precentage?",
+            "reply": ""
           }
         ],
         "category": "weight-gain",
@@ -168,29 +200,37 @@
           "sugar": "1897"
         },
         "self": {
-          "height": "5 feet",
-          "weight": "170 lbs",
-          "bodyfat": "too round to check",
-          "age": "9",
-          "ethnicity": "white"
+          "height": "6 feet",
+          "weight": "210 lbs",
+          "bodyfat": "19 percent",
+          "age": "22",
+          "ethnicity": "pacific-islander"
         },
-        "send": "Dr. Love, Raymond Arevalo, Dr. Hans",
-        "comments": "Go get a life and stop posting on this web app.",
+        "send": "Dr. Love, Dr. Green, Dr. Hans",
+        "comments": "You could also study bone/joint issues from weight gain",
         "identity": "anonymous"
       },
       {
         "index": 1,
         "status": null,
-        "question": "Do people really like their current weight status?",
-        "reply": "Nope. To be honest I myself am not satisfied with my current weight. Don't we all want to be a little skinnier or fatter?",
-        "subquestions" : [
+        "question": "Do certain colors improve mood?",
+        "reply": "Yes depending on the context of the color",
+        "subquestions": [
           {
-            "question": "",
-            "reply":""
+            "question": "What color elevates your mood into a happy mood?",
+            "reply": "Bright green"
           },
           {
-            "question": "",
-            "reply":""
+            "question": "In what context do you notice colors the mosr?",
+            "reply": "When I see walls, paintings, or clothing"
+          },
+          {
+            "question": "Have you had or do you have a form of depression?",
+            "reply": ""
+          },
+          {
+            "question": "What is your age?",
+            "reply": ""
           }
         ],
         "category": "lifestyle",
@@ -209,8 +249,8 @@
           "age": "9",
           "ethnicity": "white"
         },
-        "send": "Dr. Love, Raymond Arevalo, Dr. Hans",
-        "comments": "Go get a life and stop posting on this web app.",
+        "send": "Dr. Love, Dr. Smith, Dr. Hans",
+        "comments": "Great question. Would have liked more subquestions though.",
         "identity": "anonymous"
       }
     ]

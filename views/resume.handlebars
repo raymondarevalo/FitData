@@ -44,16 +44,15 @@
           </div>
           <div class="modal-body">
   <!-- 999999999999 -->
+            <h2> {{question}} </h2>
+            <br> <br>
             <form>
-
-
-              <!-- ********************************************************* -->
-              <!-- ask question -->
-              <h3>Question</h3>
+              {{#subquestions}}
               <div class = "form-group">
-                  <p for ="exampleTextArea">Main Research Question: {{question}}</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{reply}}</textarea>
+                <p for ="exampleTextArea">Subquestion: {{question}}</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{reply}}</textarea>
               </div>
+              {{/subquestions}}
 
               <!-- ********************************************************* -->
               <!-- breakdown -->
@@ -128,7 +127,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <a href = "/">  <button type="button" class="btn btn-danger">Submit</button></a>
+            <a href = "/">  <button type="button" class="btn btn-default">Submit</button></a>
           </div>
         </div>
       </div>

@@ -48,12 +48,82 @@
         </div>
         <div class="modal-body">
           <!-- 999999999999 -->
+          <h2>{{question}} </h2>
+          <br> <br>
           <form>
+            {{#subquestions}}
             <div class = "form-group">
-              <p for ="exampleTextArea">Main Research Question: {{question}}</p>
+              <p for ="exampleTextArea">Subquestion: {{question}}</p>
               <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
             </div>
+            {{/subquestions}}
+            <!-- ********************************************************* -->
+            <!-- breakdown -->
+            <h3>Breakdown</h3>
+            <div class = "form-group">
+                <p for ="exampleTextArea">Amount of carbs</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+            <div class = "form-group">
+                <p for ="exampleTextArea">Amount of protein</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+            <div class = "form-group">
+                <p for ="exampleTextArea">Amount of transfat</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+            <div class = "form-group">
+                <p for ="exampleTextArea">Amount of sugars</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+
+            <!-- ********************************************************* -->
+            <!-- personal info -->
+            <h3>Personal info</h3>
+            <div class = "form-group">
+                <p for ="exampleTextArea">Height</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+            <div class = "form-group">
+                <p for ="exampleTextArea">Weight</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+            <div class = "form-group">
+                <p for ="exampleTextArea">Bodyfat</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+            <div class = "form-group">
+                <p for ="exampleTextArea">Age</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+            <div class = "form-group">
+                <p for ="exampleTextArea">Ethnicity</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+            <!-- ********************************************************* -->
+            <!-- send to -->
+            <h3>Other</h3>
+
+            <div class = "form-group">
+                <p for ="exampleTextArea">Send to</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+
+            <div class = "form-group">
+                <p for ="exampleTextArea">Comments</p>
+                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+            </div>
+
+            <p for="exampleTextArea">Identity<p>
+            <label class="form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> User123
+            </label>
+            <label class="form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Anonymous
+            </label>
           </form>
+
+
           <h5>Asked by: {{name}}</h5>
           <h5>Researcher: {{researcher}}</h5>
           <!-- 999999999999 -->
