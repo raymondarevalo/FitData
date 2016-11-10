@@ -32,3 +32,18 @@ body {
 .pwInput {
 	margin-bottom: 20px;
 }
+
+
+.progress {border-radius:25px; }
+
+.weight-gain {background-color: #0275d8;}
+
+
+
+.sleep {background-color: #5bc0de}
+
+.lifestyle {background-color: orange;}
+
+.nutrition {background-color: green;}
+
+.fitness {background-color: brown;}

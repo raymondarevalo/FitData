@@ -1,68 +1,72 @@
 {
   "researchquestions": [
     {
-      "status": null,
+      "status": "done",
       "question": "What is the most effective rest interval for maximum muscle hypertrophy during weightlifting?",
       "subquestions": [
         {
-          "question": "List weightlifts that you perform and your rest intervals between 8-10 repetition sets."
+          "question": "List weightlifts that you perform and your rest intervals between 8-10 repetition sets.",
+          "index": 0
         },
         {
-          "question": "What is your body fat percentage?"
+          "question": "What is your body fat percentage?",
+          "index": 1
         },
         {
-          "question": "How much water do you consume during an average workout?"
+          "question": "How much water do you consume during an average workout?",
+          "index": 2
         },
         {
-          "question": "If any, what pre-workout and post-workout supplements do you usually take?"
+          "question": "If any, what pre-workout and post-workout supplements do you usually take?",
+          "index": 3
         },
         {
-          "question": "How long have you been consistently lifting weights?"
+          "question": "What's the longest period you have been consistently lifting weights?",
+          "index": 4
         },
         {
-          "question": "What is your age?"
-        },
-        {
-          "question": "What is your height in inches?"
-        },
-        {
-          "question": "What is your weight in pounds?"
+          "question": "Are you usually in a sedentary position or standing up during your rest intervals?",
+          "index": 5
         }
       ],
+      "photo1": "img/a1.png",
+      "photo2": "img/a2.png",
       "category": "fitness",
       "researcher": "yes",
       "name": "Dr. Williams",
       "index": 0
     },
     {
-      "status": null,
+      "status": "done",
       "question": "How do eating schedules affect weight gain?",
       "subquestions": [
         {
-          "question": "How many meals including snacks do you consume daily on average?"
+          "question": "How many meals including snacks do you consume daily on average?",
+          "index": 0
         },
         {
-          "question": "List the average time of when you consume each meal."
+          "question": "List the average times of when you consume each meal.",
+          "index": 1
         },
         {
-          "question": "How many calories do you consume daily on average?"
+          "question": "Do you consume food late at night? Explain.",
+          "index": 2
         },
         {
-          "question": "Are you consistently involved in an intense cardio exercise program?"
+          "question": "Are you consistently involved in an intense cardio exercise program?",
+          "index": 3
         },
         {
-          "question": "What is your age?"
+          "question": "What is your body-fat percentage?",
+          "index": 4
         },
         {
-          "question": "What is your heightin inches?"
-        },
-        {
-          "question": "What is your weight in pounds?"
-        },
-        {
-          "question": "What is your body-fat percentage?"
+          "question": "Are you currently on a weight loss or weight gain diet? Explain.",
+          "index": 5
         }
       ],
+      "photo1": "img/b1.png",
+      "photo2": "img/b2.png",
       "category": "weight-gain",
       "researcher": "yes",
       "name": "Dr. Smith",
@@ -73,18 +77,32 @@
       "question": "How do sleep levels vary by age group?",
       "subquestions": [
         {
-          "question": "How many hours do you sleep on average per night?"
+          "question": "How many hours do you sleep on average per night?",
+          "index": 0
         },
         {
-          "question": "How many hours do you take naps daily on average?"
+          "question": "How many hours do you take naps daily on average?",
+          "index": 1
         },
         {
-          "question": "Are you currently enrolled in school/college?"
+          "question": "Are you currently enrolled in school/college?",
+          "index": 2
         },
         {
-          "question": "What is your age?"
+          "question": "Are you suffering from any form of sleep disorders? Explain.",
+          "index": 3
+        },
+        {
+          "question": "Do you follow any sort of bi-phasic sleep cycle? Explain.",
+          "index": 4
+        },
+        {
+          "question": "How often in an average month do you go for at least 24 hours without sleeping?",
+          "index": 5
         }
       ],
+      "photo1": "img/c1.png",
+      "photo2": "img/c2.png",
       "category": "sleep",
       "researcher": "yes",
       "name": "Dr. Allen",
@@ -95,28 +113,252 @@
       "question": "Do stress levels affect daily productivity?",
       "subquestions": [
         {
-          "question": "If known, what is your blood pressure level?"
+          "question": "What is your systolic blood pressure level? If not exactly known, is your level healthy or not?",
+          "index": 0
         },
         {
-          "question": "Do you have any medical conditions due to stress?"
+          "question": "How many hours a day do you work and/or go to school?",
+          "index": 1
         },
         {
-          "question": "How many hours a day do you work and/or go to school?"
+          "question": "How many hours a day do you spend watching TV, using social media, doing other leisure activities etc.?",
+          "index": 2
         },
         {
-          "question": "How many hours a day do you spend watching TV, using social media, doing other leisure activities etc.?"
+          "question": "How much caffeine do you consume daily?",
+          "index": 3
         },
         {
-          "question": "How much caffeine do you consume daily?"
+          "question": "How involved are you in stress-reducing activities such as exercise, meditation etc.?",
+          "index": 4
         },
         {
-          "question": "What is your age?"
+          "question": "Do you feel that stress brings a sense of alertness or does it bring anxiety to you? Explain.",
+          "index": 5
         }
       ],
+      "photo1": "img/d1.png",
+      "photo2": "img/d2.png",
       "category": "lifestyle",
       "researcher": "yes",
       "name": "Dr. Brown",
       "index": 3
+    },
+    {
+      "status": null,
+      "question": "Do naps throughout the day help with productivity?",
+      "subquestions": [
+        {
+          "question": "How often do you take naps throughout an average day?",
+          "index": 0
+        },
+        {
+          "question": "If you do take naps, how long do you take naps daily on average?",
+          "index": 1
+        },
+        {
+          "question": "How long do you sleep at night on average?",
+          "index": 2
+        },
+        {
+          "question": "Do you follow some sort of bi-phasic sleep cycle or other unique sleep schedules? Explain.",
+          "index": 3
+        },
+        {
+          "question": "Do you usually feel energized after taking naps? Explain.",
+          "index": 4
+        },
+        {
+          "question": "How long can you perform work/school work etc. in a stretch on average (include lunch breaks, streching etc.)?",
+          "index": 5
+        },
+        {
+          "question": "Do you have any sleeping disorders, circadian rhythm issues, or habits that negatively affect daily productivity? Explain.",
+          "index": 6
+        }
+      ],
+      "photo1": "img/e1.png",
+      "photo2": "img/e2.png",
+      "category": "sleep",
+      "researcher": "yes",
+      "name": "Dr. Pepper",
+      "index": 4
+    },
+    {
+      "status": null,
+      "question": "What is the effect of traveling and breaks on mental health?",
+      "subquestions": [
+        {
+          "question": "How often do you go on >1 day vacations per year?",
+          "index": 0
+        },
+        {
+          "question": "What is your systolic blood pressure?",
+          "index": 1
+        },
+        {
+          "question": "How many weeks of breaks from work/school do you receive?",
+          "index": 2
+        },
+        {
+          "question": "What mode of transportation do you primarily use during travel? Explain.",
+          "index": 3
+        },
+        {
+          "question": "Do you have or have you had any form of depression? Explain.",
+          "index": 4
+        }
+      ],
+      "photo1": "img/f1.png",
+      "photo2": "img/f2.png",
+      "category": "lifestyle",
+      "researcher": "yes",
+      "name": "Dr. Johnson",
+      "index": 5
+    },
+    {
+      "status": null,
+      "question": "How effective are the commercial weight-loss diet plans?",
+      "subquestions": [
+        {
+          "question": "What brand of diet meal plans have you used?",
+          "index": 0
+        },
+        {
+          "question": "How strictly/how long have you followed a meal plan?",
+          "index": 1
+        },
+        {
+          "question": "How much weight weight did you lose in 2 months from starting the meal plan?",
+          "index": 2
+        },
+        {
+          "question": "How much weight have you gained back after ending your strictest meal plan?",
+          "index": 3
+        },
+        {
+          "question": "Do you suffer from any obesity-related health conditions? Explain.",
+          "index": 4
+        },
+        {
+          "question": "Have you had any adverse digestive problems due to a commerical weight loss diet? Explain.",
+          "index": 5
+        }
+      ],
+      "photo1": "img/g1.png",
+      "photo2": "img/g2.png",
+      "category": "weight-loss",
+      "researcher": "yes",
+      "name": "Dr. Thomas",
+      "index": 6
+    },
+    {
+      "status": null,
+      "question": "What are the effects of eating meals late at night?",
+      "subquestions": [
+        {
+          "question": "On average, how many calories do you consume 2 hours prior to going to sleep at night?",
+          "index": 0
+        },
+        {
+          "question": "What types of food do you consume late at night?",
+          "index": 1
+        },
+        {
+          "question": "If you suffer from heartburn, do you notice differences in heartburn when you do and don't eat late at night?",
+          "index": 2
+        },
+        {
+          "question": "Do you eat 3 standard meals consistently throughout the day? Explain.",
+          "index": 3
+        },
+        {
+          "question": "How often do you eat late at night in an average week?",
+          "index": 4
+        },
+        {
+          "question": "Have you had any sudden weight gains after eating late at night? Explain.",
+          "index": 5
+        }
+      ],
+      "photo1": "img/h1.png",
+      "photo2": "img/h2.png",
+      "category": "nutrition",
+      "researcher": "yes",
+      "name": "Dr. Stofer",
+      "index": 7
+    },
+    {
+      "status": null,
+      "question": "Does fruit consumption relate to reduced stress levels?",
+      "subquestions": [
+        {
+          "question": "How many citrus fruits do you consume per week? List the types of fruit.",
+          "index": 0
+        },
+        {
+          "question": "How many fruits with potassium (bananas etc.) do you consume per week?",
+          "index": 1
+        },
+        {
+          "question": "List any other types of fruits not included from above 2 questions that you consume and how much per week.",
+          "index": 2
+        },
+        {
+          "question": "Describe your stress levels on a typical day.",
+          "index": 3
+        },
+        {
+          "question": "Do you notice a difference in stress on days you eat more fruit versus less fruit?",
+          "index": 4
+        },
+        {
+          "question": "What fruits do you feel have the greatest positive impact on your stress levels?",
+          "index": 5
+        }
+      ],
+      "photo1": "img/i1.png",
+      "photo2": "img/i2.png",
+      "category": "nutrition",
+      "researcher": "yes",
+      "name": "Dr. Stofer",
+      "index": 8
+    },
+    {
+      "status": null,
+      "question": "What is the most effective muscle fiber tear repair method?",
+      "subquestions": [
+        {
+          "question": "How often per week do you perform weightlifting workouts?",
+          "index": 0
+        },
+        {
+          "question": "Do you partake in any form of yoga or full-body stretch activities? Explain.",
+          "index": 1
+        },
+        {
+          "question": "How long on average do you usually feel soreness after a workout due to muscle tears?",
+          "index": 2
+        },
+        {
+          "question": "Have you ever torn a muscle due to weightlifting? Which muscle? Explain",
+          "index": 3
+        },
+        {
+          "question": "How many grams of protein on average do you consume within 3 hours following a workout?",
+          "index": 4
+        },
+        {
+          "question": "Is there a particular activity or food type that helps you recover from muscle tear soreness? Explain.",
+          "index": 5
+        }
+      ],
+      "photo1": "img/j1.png",
+      "photo2": "img/j2.png",
+      "category": "fitness",
+      "researcher": "yes",
+      "name": "Dr. Blue",
+      "index": 9
     }
   ],
   "user": {
@@ -152,106 +394,115 @@
     ],
     "contributions": [
       {
-        "index": 0,
-        "status": null,
-        "question": "Are there any cardiovascular health risks from so-called healthy muscle gain?",
-        "reply": "Potentially",
+        "currentstatus": "done",
+        "question": "What is the most effective rest interval for maximum muscle hypertrophy during weightlifting?",
         "subquestions": [
           {
-            "question": "How often do you exercise (weightlift) per week?",
-            "reply": "3 days a week for 1 hour each day"
+            "question": "List weightlifts that you perform and your rest intervals between 8-10 repetition sets.",
+            "reply": "In the study, published Wednesday, two wireless implants worked together as a 'brain-spine interface' to communicate nerve signals between the brains and spines of the monkeys -- where each implant was positioned."
           },
           {
-            "question": "How many grams of protein do you consume daily?",
-            "reply": "80 grams"
+            "question": "What is your body fat percentage?",
+            "reply": "By resuming this once-broken path of communication, the signals can arrive in the spine, and the resulting nerve stimulation means specific muscles within the legs of the two monkeys could be activated as needed on the brain's command."
           },
           {
-            "question": "How many calories do you consume daily?",
-            "reply": "3100"
+            "question": "How much water do you consume during an average workout?",
+            "reply": "Similar research has been conducted in the past, with Courtine's team showing it could give paralyzed rats the ability to walk again, and even climb stairs, in previous studies. Other research groups have used electrodes and brain implants to restore movement in humans, both through their muscles as well as through prosthetic arms and legs."
           },
           {
-            "question": "Do you have any heart conditions caused by diet issues?",
-            "reply": ""
+            "question": "If any, what pre-workout and post-workout supplements do you usually take?",
+            "reply": "Paraplegia is often caused by injury within someone's spinal cord or nerves, meaning nerve signals cannot be transmitted between the brain and the rest of the body, such as the legs. The location of the injury can determine the extent to which a person is paralyzed: The higher the injury, the worse the paralysis. Anything in the middle of the spine will cause paraplegia, or lower limb paralysis, and higher points of injury may result in quadriplegia, or paralysis in all four limbs."
           },
           {
-            "question": "What is your age",
-            "reply": ""
+            "question": "What's the longest period you have been consistently lifting weights?",
+            "reply": "The first implant, as small as a dime, is located in the motor cortex region of the brain -- where decisions are made about walking -- to pick up brain signals telling the muscles in the legs to walk. Though someone may be paralyzed, their brain continues to think about walking and creating the signals to command this action."
           },
           {
-            "question": "What is your height in inches?",
-            "reply": ""
-          },
-          {
-            "question": "What is your weight in pounds?",
-            "reply": ""
-          },
-          {
-            "question": "What is your body-fat precentage?",
-            "reply": ""
+            "question": "Are you usually in a sedentary position or standing up during your rest intervals?",
+            "reply": "These brain signals would then typically travel down the bundles of nerves within an undamaged spinal cord to reach nerves in the leg muscles, but they are instead now transmitted wirelessly to a computer, which decodes the signal and sends a new message to the stimulator implanted in the spine, on the other side of the injury."
           }
         ],
-        "category": "weight-gain",
-        "researcher": "no",
-        "name": "Jon Jean",
         "breakdown": {
-          "carbs": "40",
-          "protein": "33",
-          "transfat": "3000",
-          "sugar": "1897"
+          "carbs": "9",
+          "protein": "8",
+          "saturated": "7",
+          "trans": "6",
+          "sugars": "5"
         },
-        "self": {
-          "height": "6 feet",
-          "weight": "210 lbs",
-          "bodyfat": "19 percent",
-          "age": "22",
-          "ethnicity": "pacific-islander"
-        },
-        "send": "Dr. Love, Dr. Green, Dr. Hans",
-        "comments": "You could also study bone/joint issues from weight gain",
-        "identity": "anonymous"
-      },
-      {
-        "index": 1,
-        "status": null,
-        "question": "Do certain colors improve mood?",
-        "reply": "Yes depending on the context of the color",
-        "subquestions": [
-          {
-            "question": "What color elevates your mood into a happy mood?",
-            "reply": "Bright green"
-          },
-          {
-            "question": "In what context do you notice colors the mosr?",
-            "reply": "When I see walls, paintings, or clothing"
-          },
-          {
-            "question": "Have you had or do you have a form of depression?",
-            "reply": ""
-          },
-          {
-            "question": "What is your age?",
-            "reply": ""
-          }
-        ],
-        "category": "lifestyle",
-        "researcher": "yes",
-        "name": "Dr. Hans",
-        "breakdown": {
-          "carbs": "40",
-          "protein": "33",
-          "transfat": "3000",
-          "sugar": "1897"
-        },
-        "self": {
-          "height": "5 feet",
-          "weight": "170 lbs",
-          "bodyfat": "too round to check",
-          "age": "9",
+        "selfinfo": {
+          "height": "9",
+          "weight": "8",
+          "fat": "7",
+          "age": "5",
           "ethnicity": "white"
         },
-        "send": "Dr. Love, Dr. Smith, Dr. Hans",
-        "comments": "Great question. Would have liked more subquestions though.",
-        "identity": "anonymous"
+        "sendto": [
+          "Dr. Coke",
+          "Dr. Smith"
+        ],
+        "comments": "sadfadsf asdfads asdfads asdfasdf",
+        "identity": "anonymous",
+        "category": "fitness",
+        "researcher": "yes",
+        "name": "Dr. Williams",
+        "index": "0",
+        "arrayindex": 0,
+        "photo1": "img/a1.png",
+        "photo2": "img/a2.png"
+      },
+      {
+        "currentstatus": null,
+        "question": "How do eating schedules affect weight gain?",
+        "subquestions": [
+          {
+            "question": "How many meals including snacks do you consume daily on average?",
+            "reply": "asdf"
+          },
+          {
+            "question": "List the average times of when you consume each meal.",
+            "reply": ""
+          },
+          {
+            "question": "Do you consume food late at night? Explain.",
+            "reply": ""
+          },
+          {
+            "question": "Are you consistently involved in an intense cardio exercise program?",
+            "reply": ""
+          },
+          {
+            "question": "What is your body-fat percentage?",
+            "reply": ""
+          },
+          {
+            "question": "Are you currently on a weight loss or weight gain diet? Explain.",
+            "reply": ""
+          }
+        ],
+        "breakdown": {
+          "carbs": "",
+          "protein": "",
+          "saturated": "",
+          "trans": "",
+          "sugars": ""
+        },
+        "selfinfo": {
+          "height": "",
+          "weight": "",
+          "fat": "",
+          "age": "",
+          "ethnicity": ""
+        },
+        "sendto": [],
+        "comments": "",
+        "identity": "",
+        "category": "weight-gain",
+        "researcher": "yes",
+        "name": "Dr. Smith",
+        "index": "1",
+        "arrayindex": 1,
+        "photo1": "img/b1.png",
+        "photo2": "img/b2.png"
       }
     ]
   }

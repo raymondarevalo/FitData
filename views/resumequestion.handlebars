@@ -23,12 +23,169 @@
       </ul>
     </div>
   </nav>
+  {{#responses}}
+  <div class="container">
+    <br><br>
+    <form id ="answerquestionForm" role="form" method="get" action="/resumesaveresponse">
+      <div class = "row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <progress class="progress progress-striped" id ="progress-extended" value="10" max="100"></progress>
 
-  <h1>Inside of resume question! </h1>
+          <div class="step well">
+            <h2>{{question}}</h2>
+            <div class = "form-group" style = "display: none;">
+              <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question">{{question}}</textarea>
+            </div>
+
+            {{#subquestions}}
+            <div class = "form-group" style = "display: none;">
+              <textarea class = "form-control" id="exampleTextArea" rows="5" name ="subquestions">{{question}}</textarea>
+            </div>
+
+            <div class = "form-group">
+              <p for ="exampleTextArea">Subquestion: {{question}}</p>
+              <textarea class = "form-control" id="exampleTextArea" rows="5" name ="reply">{{reply}}</textarea>
+            </div>
+
+            {{/subquestions}}
 
 
-  <!-- FOOTER -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-</body>
+            <div style = "display: none;">
+              <div class="form-group">
+                <label for="usr">Amount of carbs (grams)</label>
+                <input type="text" class="form-control" id="usr" name="category" value = "{{category}}">
+              </div>
+              <div class="form-group">
+                <label for="usr">Amount of carbs (grams)</label>
+                <input type="text" class="form-control" id="usr" name="researcher" value = "{{researcher}}">
+              </div>
+              <div class="form-group">
+                <label for="usr">Amount of carbs (grams)</label>
+                <input type="text" class="form-control" id="usr" name="name" value = "{{name}}">
+              </div>
+              <div class="form-group">
+                <label for="usr">Amount of carbs (grams)</label>
+                <input type="text" class="form-control" id="usr" name="index" value = "{{index}}">
+              </div>
+              <div class="form-group">
+                <label for="usr">Amount of carbs (grams)</label>
+                <input type="text" class="form-control" id="usr" name="arrayindex" value = "{{arrayindex}}">
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <!--  -->
+          <div class="step well">
+            <h2>Breakdown</h2>
+            <div class="form-group">
+              <label for="usr">Amount of carbs (grams)</label>
+              <input type="text" class="form-control" id="usr" name="carbs" value="{{breakdown.carbs}}">
+            </div>
+            <div class="form-group">
+              <label for="usr">Amount of protein (grams)</label>
+              <input type="text" class="form-control" id="usr" name="protein" value="{{breakdown.protein}}">
+            </div>
+            <div class="form-group">
+              <label for="usr">Amount of Saturated fat (grams)</label>
+              <input type="text" class="form-control" id="usr" name = "saturated" value="{{breakdown.saturated}}">
+            </div>
+            <div class="form-group">
+              <label for="usr">Amount of trans fat (grams)</label>
+              <input type="text" class="form-control" id="usr" name ="trans" value = "{{breakdown.trans}}">
+            </div>
+            <div class="form-group">
+              <label for="usr">Amount of Sugars (grams)</label>
+              <input type="text" class="form-control" id="usr" name ="sugars" value="{{breakdown.sugars}}">
+            </div>
+
+
+          </div>
+          <div class="step well">
+            <h2>Personal Info</h2>
+            <div class="form-group">
+              <label for="usr">Height</label>
+              <input type="text" class="form-control" id="usr" name="height" value ="{{selfinfo.height}}">
+            </div>
+            <div class="form-group">
+              <label for="usr">Weight</label>
+              <input type="text" class="form-control" id="usr" name="weight" value="{{selfinfo.weight}}">
+            </div>
+            <div class="form-group">
+              <label for="usr">Body Fat</label>
+              <input type="text" class="form-control" id="usr" name="fat" value="{{selfinfo.fat}}">
+            </div>
+            <div class="form-group">
+              <label for="usr">Age</label>
+              <input type="text" class="form-control" id="usr" name="age" value="{{selfinfo.age}}">
+            </div>
+            <div class="form-group">
+              <label for="usr">Ethnicity</label>
+              <input type="text" class="form-control" id="usr" name="ethnicity" value="{{selfinfo.ethnicity}}">
+            </div>
+
+
+          </div>
+          <div class="step well">
+            <h2>Other</h2>
+
+
+            <div class="form-check">
+              <label for="usr">Send To</label>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name = "sendto" value="Dr. Smith"> Dr. Smith
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Coke"> Dr. Coke
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Smith"> Dr. Smith
+              </label>
+            </div>
+            <div class = "form-group">
+              <p for ="exampleTextArea">Comments</p>
+              <textarea class = "form-control" id="exampleTextArea" rows="5" name ="comments">{{comments}}</textarea>
+            </div>
+
+
+            <p for="exampleTextArea">Identity<p>
+              <label class="form-check-inline">
+                <input class="form-check-input" type="radio" name="identity" id="inlineRadio1" value="user123"> User123
+              </label>
+              <label class="form-check-inline">
+                <input class="form-check-input" type="radio" name="identity" id="inlineRadio2" value="anonymous"> Anonymous
+              </label>
+            </div>
+
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-xs-12 col-sm-4 col-md-4">
+            <button type="button" class="action back btn btn-info">Back</button>
+            <button type="button" class="action next btn btn-info">Next</button>
+          </div>
+
+          <div class ="col-xs-12 col-sm-8 col-md-8">
+
+            <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
+            <button class="btn btn-info" name = "submit" value="savequit">Save and Quit</button>
+            <button class="action submit btn btn-success" name="submit" value="save">Save</button>
+
+          </div>
+        </div>
+      </form>
+    </div>
+      {{/responses}}
+
+      <!-- FOOTER -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+      <script src="/js/forms.js"></script>
+    </body>

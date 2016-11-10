@@ -23,122 +23,53 @@
       </ul>
     </div>
   </nav>
-  <h2> Resume answering question</h2>
-  <br> <br>
-  {{#responses}}
-    <h3>Question: {{question}}</h3>
-    <p>Category: {{category}}</p>
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#resumeModal{{index}}">
-      Resume
-    </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="resumeModal{{index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <h4 class="modal-title" id="myModalLabel">Answer {{category}} question</h4>
-          </div>
-          <div class="modal-body">
-  <!-- 999999999999 -->
-            <h2> {{question}} </h2>
-            <br> <br>
-            <form>
-              {{#subquestions}}
-              <div class = "form-group">
-                <p for ="exampleTextArea">Subquestion: {{question}}</p>
-                <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{reply}}</textarea>
-              </div>
-              {{/subquestions}}
-
-              <!-- ********************************************************* -->
-              <!-- breakdown -->
-              <h3>Breakdown</h3>
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Amount of carbs</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{breakdown.carbs}}</textarea>
-              </div>
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Amount of protein</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{breakdown.protein}}</textarea>
-              </div>
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Amount of transfat</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{breakdown.transfat}}</textarea>
-              </div>
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Amount of sugars</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{breakdown.sugar}}</textarea>
-              </div>
-
-              <!-- ********************************************************* -->
-              <!-- personal info -->
-              <h3>Personal info</h3>
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Height</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{self.height}}</textarea>
-              </div>
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Weight</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{self.weight}}</textarea>
-              </div>
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Bodyfat</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{self.bodyfat}}</textarea>
-              </div>
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Age</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{self.age}}</textarea>
-              </div>
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Ethnicity</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{self.ethnicity}}</textarea>
-              </div>
-              <!-- ********************************************************* -->
-              <!-- send to -->
-              <h3>Other</h3>
-
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Send to</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{send}}</textarea>
-              </div>
-
-              <div class = "form-group">
-                  <p for ="exampleTextArea">Comments</p>
-                  <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0">{{comments}}</textarea>
-              </div>
-
-              <p for="exampleTextArea">Identity<p>
-              <label class="form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> User123
-              </label>
-              <label class="form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Anonymous
-              </label>
-              <!-- ********************************************************* -->
-              <!-- comments -->
-            </form>
-            <h5>Asked by: {{name}}</h5>
-            <h5>Researcher: {{researcher}}</h5>
-  <!-- 999999999999 -->
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <a href = "/">  <button type="button" class="btn btn-default">Submit</button></a>
-          </div>
-        </div>
+  <div class ="container">
+    <br> <br>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Resume answering a question</h1>
+        <p class="lead">Help researchers understand health by finishing your response.</p>
       </div>
     </div>
-    <hr>
-  {{/responses}}
+<div class = "row">
+{{#responses}}
+{{#unless currentstatus}}
+<div class = "col-xs-12">
+  <div class = "card card-block">
+
+<h3 class="card-title">{{question}} <span class="tag tag-default {{category}}" style = "font-size: 0.6em;">{{category}}</span></h3>
+
+<p class="card-text">Help {{name}} with some few {{category}} questions. </p>
+
+
+  <form id ="choosequestionForm" role="form" method="get" action="/resumequestion">
+    <!-- Choose a category -->
+    <div class = "form-group" style = "display: none;">
+        <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question">{{question}}</textarea>
+    </div>
+
+
+    <div style = "display: none;">
+    <div class="form-group">
+      <label for="usr">Amount of carbs (grams)</label>
+      <input type="text" class="form-control" id="usr" name="arrayindex" value = "{{arrayindex}}">
+    </div>
+  </div>
+
+
+    <button type="submit" value ="done" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</div>
+{{/unless}}
+{{/responses}}
+</div>
 
   <br> <br>
-  <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
+  <a href = "/" style="padding-left: 25px;">  <button type="button" class="btn btn-danger">Quit</button></a>
 
-
+</div>
 
   <!-- FOOTER -->
 
