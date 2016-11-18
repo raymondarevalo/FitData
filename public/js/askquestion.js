@@ -57,6 +57,13 @@ function addSRQ () {
   //$("#askquestionForm").append(newDiv);
   $(newDiv).insertBefore( "#addSRQId" );
 
+  /* Make submit viewable */
+  document.getElementById('asksubmit').style.display = 'inline';
+
+  document.getElementById('submust').style.display = 'none';
+
+
+
   console.log("stop");
 
 

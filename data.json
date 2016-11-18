@@ -390,6 +390,15 @@
         "categories": "weight-loss",
         "question0": "Does swimming lose weight?",
         "question1": "How many yards do I need to run to burn a cheeseburger?"
+      },
+      {
+        "categories": "weight-loss",
+        "question0": ""
+      },
+      {
+        "categories": "weight-loss",
+        "question0": "",
+        "question1": ""
       }
     ],
     "contributions": [

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>FitData</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+  <link href = "css/styles.css" rel = "stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <nav class="navbar navbar-dark bg-inverse">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      <a class="navbar-brand" href="/">FitData</a>
+      <ul class="nav navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class = "container">
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Ask Scientific Question</h1>
+        <p class="lead">Help researchers come up with research questions.</p>
+      </div>
+    </div>
+    <form id ="askquestionForm" role="form" method="get" action="/submitquestion">
+      <!-- Choose a category -->
+      <div class = "form-group">
+        <label for="exampleSelect1">Categories</label>
+        <select class = "form-control" id = "exampleSelect1" name ="categories">
+          <option value="weight-loss">Weight Loss</option>
+          <option value="weight-gain">Weight Gain</option>
+          <option value="exercise">Exercise</option>
+          <option value="lifestyle">Lifestyle</option>
+        </select>
+      </div>
+
+      <div class = "form-group">
+        <label for ="exampleTextArea">Main Research Question</label>
+        <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
+      </div>
+
+      <div>
+        <p style="color: red;" id = "submust"> &#42; Must have at least one sub research question</p>
+        <button id="addSRQId" type ="button" value ="addSRQ" onclick="addSRQ()" class ="btn btn-warning">Add Sub Research Question</button>
+      </div>
+      <div style = "float: left;">
+        <br> <br>
+        <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
+        <button type="submit" value ="done" class="btn btn-primary" id = "asksubmit" style ="display: none;">Submit</button>
+      </div>
+    </form>
+
+    <br><br>
+
+    <br><br><br>
+  </div>
+
+  <!-- Choose a category -->
+
+  <!-- Main research question -->
+
+  <!-- Subresearch quesiton -->
+
+
+  <!--<a href = "/reviewquestion.html">  <button type="button" class="btn btn-default">Done Creating a Question</button></a>-->
+  <!-- FOOTER -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  <script src = "/js/askquestion.js"></script>
+</body>

@@ -12,6 +12,7 @@ var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 var askquestion = require('./routes/askquestion');
+var askquestion2 = require('./routes/askquestion2');
 var choosequestion = require('./routes/choosequestion');
 var answerquestion = require('./routes/answerquestion');
 var resume = require('./routes/resume');
@@ -51,6 +52,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 
 app.get('/askquestion', askquestion.view);
+app.get('/askquestion2', askquestion2.view);
 
 /* choose question */
 app.get('/choosequestion', choosequestion.view);
