@@ -23,28 +23,60 @@
       </ul>
     </div>
   </nav>
-
-  <h2>Ask Question</h2>
-  <form id ="askquestionForm" role="form" method="get" action="/submitquestion">
-    <!-- Choose a category -->
-    <div class = "form-group">
-      <label for="exampleSelect1">Categories</label>
-      <select class = "form-control" id = "exampleSelect1" name ="categories">
-        <option value="weight-loss">Weight Loss</option>
-        <option value="weight-gain">Weight Gain</option>
-        <option value="exercise">Exercise</option>
-        <option value="lifestyle">Lifestyle</option>
-      </select>
+  <div class = "container" style = "margin-bottom: 30px;">
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Create Research Project</h1>
+        <p class="lead">Create a research project that answers a main research question using servey questions to collect data</p>
+      </div>
     </div>
-    <div class = "form-group">
-        <label for ="exampleTextArea">Main Research Question</label>
+    <div class = "col-md-8 col-md-offset-2">
+    <form id ="askquestionForm" role="form" method="get" action="/submitquestion">
+      <!-- Choose a category -->
+      <div class = "form-group" style="margin-bottom: 40px;">
+        <label for="exampleSelect1">Category</label>
+        <select class = "form-control" id = "exampleSelect1" name ="categories">
+          <option value="weight-loss">Weight Loss</option>
+          <option value="weight-gain">Weight Gain</option>
+          <option value="exercise">Exercise</option>
+          <option value="lifestyle">Lifestyle</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <div class = "form-group" style = "margin-top: 30px; margin-bottom: 40px;">
+        <label for ="exampleTextArea">Step 1. Create main research question</label>
         <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
-    </div>
+      </div>
 
-    <button id="addSRQId" type ="button" value ="addSRQ" onclick="addSRQ()">Add Sub Research Question</button>
-    <button type="submit" value ="done" class="btn btn-primary">Submit</button>
-  </form>
+      <hr>
 
+        <p style = "margin-top: 40px;"> Step 2. Create survey qustions</p>
+
+
+      <div id = "SRQButton" style="margin-bottom: 40px;">
+        <!--<p style="color: red;" id = "submust"> &#42; Step 2. Create survey questions</p>-->
+        <button id="addSRQId" type ="button" value ="addSRQ" onclick="addSRQ()" class ="btn btn-warning">Add survey question</button>
+      </div>
+
+      <hr>
+
+      <div class = "form-group" style = "margin-top: 30px; margin-bottom: 30px;">
+        <label>Author's name</label>
+        <input type="text" class="form-control" name="name" value="{{selfinfo.age}}">
+      </div>
+
+      <div style = "float: left;">
+        <br> <br>
+        <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
+        <button type="submit" value ="done" class="btn btn-primary" id = "asksubmit" style ="display: none;">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  </div>
 
   <!-- Choose a category -->
 
@@ -53,7 +85,6 @@
   <!-- Subresearch quesiton -->
 
 
-  <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
   <!--<a href = "/reviewquestion.html">  <button type="button" class="btn btn-default">Done Creating a Question</button></a>-->
   <!-- FOOTER -->
 

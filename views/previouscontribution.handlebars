@@ -39,11 +39,15 @@
       {{#if currentstatus}}
       <div class = "col-xs-12">
         <div class = "card card-block">
-          <h3>Question: {{question}}</h3>
-          <p>Category: {{category}}</p>
+          <h3 class="card-title">{{question}} <span class="tag tag-default {{category}}" style = "font-size: 0.6em;">{{category}}</span></h3>
+
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#previousAnswer{{index}}">
-            View more
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#previousAnswer{{index}}">
+            View Responses
+          </button>
+
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#previousAnswer{{index}}Graph">
+            View Graphs
           </button>
 
           <!-- Modal -->
@@ -54,157 +58,65 @@
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <h4 class="modal-title" id="myModalLabel">Previous {{category}} question</h4>
+                  <h4 class="modal-title" id="myModalLabel">Survey Resonses to {{category}} question</h4>
                 </div>
-
-
                 <div class="modal-body">
+              <!-- breakdown -->
+            </div>
+            {{#subquestions}}
+            <div class ="previous-questions">
+              <h4>{{question}}</h4>
+              <p>{{reply}}</p>
+            </div>
+            {{/subquestions}}
 
-                  <!-- Question -->
-                  <br>
-                  <h2 style="width: 100%; text-align: center;">{{question}}</h2>
-                  <br> <br><br> <br>
-
-                  <h4 style="width: 100%; text-align: center;">Data from all contributors of this question</h4>
-                  <hr>
-                  <div style ="text-align: center;">
-                    <img style = "width: 90%;" src="{{photo1}}">
-                    <img style = "width: 90%;" src="{{photo2}}">
-                  </div>
-
-                  <!-- breakdown -->
-
-                </div>
-
-                <br> <br> <br>
-
-                {{#subquestions}}
-                <h4 style ="padding-left: 20px;">{{question}}</h4>
-                <hr>
-                <p style="padding-left: 20px; padding-right: 20px;">{{reply}}</p>
-                {{/subquestions}}
-                <br> <br> <br>
-                <ul class="list-group">
-                  <br>
-                  <h3 style = "padding-left: 20px">Breakdown</h3>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Carbs</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{breakdown.carbs}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Protein</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{breakdown.protein}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Trans Fat</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{breakdown.trans}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Saturated Fat</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{breakdown.saturated}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Sugar</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{breakdown.sugars}}</span></div>
-                    </div>
-                  </li>
-                </ul>
-                <ul class="list-group">
-                  <br>
-                  <h3 style="padding-left: 20px;">Personal Info</h3>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Height</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{selfinfo.height}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Weight</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{selfinfo.weight}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Body Fat</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{selfinfo.fat}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Age</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{selfinfo.age}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Ethnicity</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{selfinfo.ethnicity}}</span></div>
-                    </div>
-                  </li>
-                </ul>
-
-                <ul class="list-group">
-                  <br>
-                  <h3 style="padding-left: 20px;">Other</h3>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Sent To</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{sendto}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Identity</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{identity}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Asked By</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{name}}</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class ="row">
-                      <div class = "col-xs-3">Researcher</div>
-                      <div class = "col-xs-9"><span class="tag tag-default tag-pill float-xs-right">{{researcher}}</span></div>
-                    </div>
-                  </li>
-                </ul>
-                <br> <br> <br>
-                <h3 style="padding-left: 20px;">Comments</h3>
-                <hr>
-                <p style="padding-left: 20px;">{{comments}}</p>
-                <br> <br> <br>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
-
         </div>
       </div>
-      {{/if}}
-      {{/answers}}
+
+      <!-- Modal for Graphs -->
+      <div class="modal fade" id="previousAnswer{{index}}Graph" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Graphs to {{category}} question</h4>
+            </div>
+            <div class="modal-body">
+              <!-- Question -->
+              <!-- <h2 style="width: 100%; text-align: center;">{{question}}</h2> -->
+
+              <h4 style="width: 100%; text-align: center;">Data from all contributors of this question</h4>
+              <div style ="text-align: center;">
+              <img class ="previous-photo" src="{{photo1}}">
+              <img class ="previous-photo" src="{{photo2}}">
+            </div>
+          <!-- breakdown -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     </div>
-    <!-- ********************************************************************* -->
-    <br><br>
-    <!-- <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a> -->
   </div>
-  <!--
-  <a href = "/finishedcontribution.html">  <button type="button" class="btn btn-default">View</button></a>
+  {{/if}}
+  {{/answers}}
+
+</div>
+<!-- ********************************************************************* -->
+<br><br>
+<!-- <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a> -->
+</div>
+<!--
+<a href = "/finishedcontribution.html">  <button type="button" class="btn btn-default">View</button></a>
 -->
 <!-- FOOTER -->
 

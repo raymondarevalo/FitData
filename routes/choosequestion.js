@@ -2,5 +2,8 @@ var data = require("../data.json");
 
 exports.view = function(req, res){
   console.log("---------- Inside of choose question -------- ");
-  res.render('choosequestion', {questions: data.researchquestions});
+  res.render('choosequestion', {
+    questions: data.researchquestions,
+    questions2: data.user.personalquestions
+  });
 };

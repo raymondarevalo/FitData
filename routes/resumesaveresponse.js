@@ -43,28 +43,32 @@ exports.view = function(req, res){
 
         case "carbs":
         newArray.breakdown['carbs'] = req.query[key];
+        newArray.breakdown['carbstype'] = req.query['carbstype'];
         break;
         case "protein":
         newArray.breakdown['protein'] = req.query[key];
+        newArray.breakdown['proteintype'] = req.query['proteintype'];
         break;
         case "saturated":
         newArray.breakdown['saturated']=req.query[key];
+        newArray.breakdown['saturatedtype'] = req.query['saturatedtype']
         break;
         case "trans":
         newArray.breakdown['trans'] = req.query[key];
+        newArray.breakdown['transtype'] = req.query['transtype'];
         break;
         case "sugars":
         newArray.breakdown['sugars'] = req.query[key];
+        newArray.breakdown['sugarstype'] = req.query['sugarstype'];
         break;
 
         case "height":
         newArray.selfinfo['height'] = req.query[key];
+        newArray.selfinfo['heighttype'] = req.query['heighttype'];
         break;
         case "weight":
         newArray.selfinfo['weight'] = req.query[key];
-        break;
-        case "fat":
-        newArray.selfinfo['fat'] = req.query[key];
+        newArray.selfinfo['weighttype'] = req.query["weighttype"];
         break;
         case "age":
         newArray.selfinfo['age'] = req.query[key];

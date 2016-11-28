@@ -24,180 +24,217 @@
     </div>
   </nav>
 
-  <!--
-  <h2>Answer</h2>
-  <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
-  <a href = "/">  <button type="button" class="btn btn-default">Save & Quit</button></a>
--->
-
-
-
-
-<div class="container">
-  <br><br>
-  <div class="col-md-8 col-md-offset-2">
-    <form id ="answerquestionForm" role="form" method="get" action="/saveresponse">
-      <div class="progress">
-        <div class="progress-bar progress-bar-info progress-bar-striped active progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <progress class="progress progress-striped" id ="progress-extended" value="10" max="100"></progress>
-
-      <div class="step well">
-        {{#questions}}
-
-        <h2>{{question}}</h2>
-        <div class = "form-group" style = "display: none;">
-          <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question">{{question}}</textarea>
+  <!-- Body Content -->
+  <div class="container" style = "margin-top: 50px; margin-bottom: 40px;">
+    <div class="col-md-8 col-md-offset-2">
+      <form id ="answerquestionForm" role="form" method="get" action="/saveresponse">
+        <div class="progress">
+          <div class="progress-bar progress-bar-info progress-bar-striped active progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-
-        {{#subquestions}}
-        <div class = "form-group" style = "display: none;">
-          <textarea class = "form-control" id="exampleTextArea" rows="5" name ="subquestions">{{question}}</textarea>
-        </div>
-
-        <div class = "form-group">
-          <p for ="exampleTextArea">Subquestion: {{question}}</p>
-          <textarea class = "form-control" id="exampleTextArea" rows="5" name ="reply"></textarea>
-        </div>
-
-        {{/subquestions}}
+        <progress class="progress progress-striped" id ="progress-extended" value="10" max="100"></progress>
 
 
+  <!-- Personal Info -->
+  <div class="step well" style = "margin-bottom: 40px;">
+    <h2>Personal Info</h2>
 
-        <div style = "display: none;">
-        <div class="form-group">
-          <label for="usr">Amount of carbs (grams)</label>
-          <input type="text" class="form-control" id="usr" name="category" value = "{{category}}">
-        </div>
-        <div class="form-group">
-          <label for="usr">Amount of carbs (grams)</label>
-          <input type="text" class="form-control" id="usr" name="researcher" value = "{{researcher}}">
-        </div>
-        <div class="form-group">
-          <label for="usr">Amount of carbs (grams)</label>
-          <input type="text" class="form-control" id="usr" name="name" value = "{{name}}">
-        </div>
-        <div class="form-group">
-          <label for="usr">Amount of carbs (grams)</label>
-          <input type="text" class="form-control" id="usr" name="index" value = "{{index}}">
-        </div>
-      </div>
-
-        {{/questions}}
-      </div>
-
-
-
-      <!--  -->
-      <div class="step well">
-        <h2>Breakdown</h2>
-        <div class="form-group">
-          <label for="usr">Amount of carbs (grams)</label>
-          <input type="text" class="form-control" id="usr" name="carbs">
-        </div>
-        <div class="form-group">
-          <label for="usr">Amount of protein (grams)</label>
-          <input type="text" class="form-control" id="usr" name="protein">
-        </div>
-        <div class="form-group">
-          <label for="usr">Amount of Saturated fat (grams)</label>
-          <input type="text" class="form-control" id="usr" name = "saturated">
-        </div>
-        <div class="form-group">
-          <label for="usr">Amount of trans fat (grams)</label>
-          <input type="text" class="form-control" id="usr" name ="trans">
-        </div>
-        <div class="form-group">
-          <label for="usr">Amount of Sugars (grams)</label>
-          <input type="text" class="form-control" id="usr" name ="sugars">
-        </div>
-
-
-      </div>
-      <div class="step well">
-        <h2>Personal Info</h2>
-        <div class="form-group">
-          <label for="usr">Height</label>
-          <input type="text" class="form-control" id="usr" name="height">
-        </div>
-        <div class="form-group">
-          <label for="usr">Weight</label>
-          <input type="text" class="form-control" id="usr" name="weight">
-        </div>
-        <div class="form-group">
-          <label for="usr">Body Fat</label>
-          <input type="text" class="form-control" id="usr" name="fat">
-        </div>
-        <div class="form-group">
-          <label for="usr">Age</label>
-          <input type="text" class="form-control" id="usr" name="age">
-        </div>
-        <div class="form-group">
-          <label for="usr">Ethnicity</label>
-          <input type="text" class="form-control" id="usr" name="ethnicity">
-        </div>
-
-
-      </div>
-      <div class="step well">
-        <h2>Other</h2>
-
-
-        <div class="form-check">
-          <label for="usr">Send To</label>
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name = "sendto" value="Dr. Smith"> Dr. Smith
-          </label>
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Coke"> Dr. Coke
-          </label>
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Smith"> Dr. Smith
-          </label>
-        </div>
-        <div class = "form-group">
-          <p for ="exampleTextArea">Comments</p>
-          <textarea class = "form-control" id="exampleTextArea" rows="5" name ="comments"></textarea>
-        </div>
-
-
-        <p for="exampleTextArea">Identity<p>
-          <label class="form-check-inline">
-            <input class="form-check-input" type="radio" name="identity" id="inlineRadio1" value="user123"> User123
-          </label>
-          <label class="form-check-inline">
-            <input class="form-check-input" type="radio" name="identity" id="inlineRadio2" value="anonymous"> Anonymous
-          </label>
-        </div>
-
-
-
-
-
-        <!-- left -->
-        <div style = "float: left;">
-          <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
-          <button class="btn btn-secondary" name = "submit" value="savequit">Save and Quit</button>
-        </div>
-
-        <!-- right -->
-        <div style = "float: right;">
-          <button type="button" class="action back btn btn-info">Back</button>
-          <button type="button" class="action next btn btn-info">Next</button>
-          <button class="action submit btn btn-success" name="submit" value="save">Submit</button>
-        </div>
-
-      </form>
+    <!-- Height -->
+    <div class="form-group">
+      <p>Height </p>
+      <input type="text" class="form-control left-option" name="height">
+      <select class = "form-control right-option" id = "exampleSelect1" name ="heighttype">
+        <option value="inches">Inches</option>
+        <option value="centicemters">Centimeters</option>
+      </select>
     </div>
+
+    <!-- Weight -->
+    <div class="form-group question-group">
+      <!-- <label for="weight">Weight</label> -->
+      <p>Weight</p>
+      <input type="text" class="form-control left-option" name="weight">
+      <select class = "form-control right-option" name ="weighttype">
+        <option value="pounds">Pounds</option>
+        <option value="kilograms">Kilograms</option>
+      </select>
+    </div>
+
+    <!-- Age -->
+    <div class="form-group question-group">
+      <label for="usr">Birthday</label>
+      <input type="text" class="form-control question-size" id="usr" name="age" placeholder="MM/DD/YY">
+    </div>
+
+    <!-- Ethnicity -->
+    <div class = "form-group">
+    <p>Race/Ethnicity</p>
+    <select class = "form-control question-size" name ="ethnicity">
+      <option value="asian">Asian</option>
+      <option value="black">Black</option>
+      <option value="hawaiian">Native Hawaiian</option>
+      <option value="hispanic">Hispanic</option>
+      <option value="White">White</option>
+    </select>
   </div>
-  <br> <br>
-  <!--
-  <a href = "/reviewcontribution.html">  <button type="button" class="btn btn-default">Done Answering Question</button></a>
--->
+  </div>
+
+  <!-- Breakdown -->
+  <div class="step well question-section">
+    <h2>Daily Intake</h2>
+
+    <!-- Carbs -->
+    <div class="form-group">
+      <p>Amount of Carbs</p>
+      <input type="text" class="form-control left-option" id="usr" name="carbs">
+      <select class = "form-control right-option" name ="carbstype">
+        <option value="grams">Grams</option>
+        <option value="milligrams">Milligrams</option>
+      </select>
+    </div>
+
+    <!-- Protein -->
+    <div class="form-group question-group">
+      <p>Amount of Protein</p>
+      <input type="text" class="form-control left-option" id="usr" name="protein">
+      <select class = "form-control right-option" name ="proteintype">
+        <option value="grams">Grams</option>
+        <option value="milligrams">Milligrams</option>
+      </select>
+    </div>
+
+    <!-- Saturated Fat -->
+    <div class="form-group question-group">
+      <p>Amount of Saturated Fat </p>
+      <input type="text" class="form-control left-option" id="usr" name = "saturated">
+      <select class = "form-control right-option" name ="saturatedtype">
+        <option value="grams">Grams</option>
+        <option value="milligrams">Milligrams</option>
+      </select>
+    </div>
+
+    <!-- Transfat -->
+    <div class="form-group question-group">
+      <p> Amount of Transfat</p>
+      <input type="text" class="form-control left-option" id="usr" name ="trans">
+      <select class = "form-control right-option" name ="transtype">
+        <option value="grams">Grams</option>
+        <option value="milligrams">Milligrams</option>
+      </select>
+    </div>
+
+
+    <div class="form-group question-group">
+      <p>Amount of Sugars</p>
+      <input type="text" class="form-control left-option" id="usr" name ="sugars">
+      <select class = "form-control right-option" name ="sugarstype">
+        <option value="grams">Grams</option>
+        <option value="milligrams">Milligrams</option>
+      </select>
+    </div>
+
+
+  </div>
+
+  <!-- Questions -->
+  <div class="step well question-section">
+    {{#questions}}
+    <h2>{{question}}</h2>
+    <div class = "form-group" style = "display: none;">
+      <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question">{{question}}</textarea>
+    </div>
+
+    {{#subquestions}}
+    <div class = "form-group" style = "display: none;">
+      <textarea class = "form-control" id="exampleTextArea" rows="5" name ="subquestions">{{question}}</textarea>
+    </div>
+
+    <div class = "form-group">
+      <p for ="exampleTextArea">Survey Question: {{question}}</p>
+      <textarea class = "form-control" id="exampleTextArea" rows="5" name ="reply"></textarea>
+    </div>
+
+    {{/subquestions}}
+    <div style = "display: none;">
+      <div class="form-group">
+        <label for="usr">Amount of carbs (grams)</label>
+        <input type="text" class="form-control" id="usr" name="category" value = "{{category}}">
+      </div>
+      <div class="form-group">
+        <label for="usr">Amount of carbs (grams)</label>
+        <input type="text" class="form-control" id="usr" name="researcher" value = "{{researcher}}">
+      </div>
+      <div class="form-group">
+        <label for="usr">Amount of carbs (grams)</label>
+        <input type="text" class="form-control" id="usr" name="name" value = "{{name}}">
+      </div>
+      <div class="form-group">
+        <label for="usr">Amount of carbs (grams)</label>
+        <input type="text" class="form-control" id="usr" name="index" value = "{{index}}">
+      </div>
+    </div>
+    {{/questions}}
+  </div>
+
+
+  <!-- Other -->
+  <div class="step well question-section">
+    <h2>Other</h2>
+
+    <div class="form-check question-other">
+      <label for="usr">Send To</label> <br>
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name = "sendto" value="Dr. Hariharan"> Dr. Hariharan
+      </label>
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Chan"> Dr. Chan
+      </label>
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Smith"> Dr. Smith
+      </label>
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Huynh"> Dr. Huynh
+      </label>
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Lopez"> Dr. Lopez
+      </label>
+    </div>
+
+
+    <div class = "form-group question-other">
+      <p for ="exampleTextArea">Comments</p>
+      <textarea class = "form-control" id="exampleTextArea" rows="5" name ="comments"></textarea>
+    </div>
+
+    <div class = "question-other">
+    <p for="exampleTextArea">Identity<p>
+      <label class="form-check-inline">
+        <input class="form-check-input" type="radio" name="identity" id="inlineRadio1" value="user123"> User123
+      </label>
+      <label class="form-check-inline">
+        <input class="form-check-input" type="radio" name="identity" id="inlineRadio2" value="anonymous"> Anonymous
+      </label>
+    </div>
+    </div>
+
+
+    <!-- left -->
+    <div style = "float: left;" class ="question-size">
+      <a href = "/">  <button type="button" class="btn btn-danger question-size">Quit</button></a>
+      <button class="btn btn-secondary question-size" name = "submit" value="savequit">Save and Quit</button>
+    </div>
+
+    <!-- right -->
+    <div style = "float: right;" class ="question-size">
+      <button type="button" class="action back btn btn-info question-size">Back</button>
+      <button type="button" class="action next btn btn-info question-size">Next</button>
+      <button class="action submit btn btn-success question-size" name="submit" value="save">Submit</button>
+    </div>
+  </form>
+</div>
+</div>
 
 
 <!-- FOOTER -->
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
 <script src="/js/forms.js"></script>

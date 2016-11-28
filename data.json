@@ -73,7 +73,7 @@
       "index": 1
     },
     {
-      "status": null,
+      "status": "done",
       "question": "How do sleep levels vary by age group?",
       "subquestions": [
         {
@@ -109,7 +109,7 @@
       "index": 2
     },
     {
-      "status": null,
+      "status": "done",
       "question": "Do stress levels affect daily productivity?",
       "subquestions": [
         {
@@ -145,7 +145,7 @@
       "index": 3
     },
     {
-      "status": null,
+      "status": "done",
       "question": "Do naps throughout the day help with productivity?",
       "subquestions": [
         {
@@ -359,6 +359,46 @@
       "researcher": "yes",
       "name": "Dr. Blue",
       "index": 9
+    },
+    {
+      "status": null,
+      "question": "How does using your phone/computer influence your life?",
+      "subquestions": [
+        {
+          "question": "How long does it take you to use your phone/computer after waking up?",
+          "index": 0
+        },
+        {
+          "question": "How many hours do you use your devices? Computer, phone, tablet, etc.",
+          "index": 1
+        }
+      ],
+      "category": "lifestyle",
+      "researcher": "no",
+      "photo1": "img/c1.png",
+      "photo2": "img/c2.png",
+      "name": "Raymond Arevalo",
+      "index": 10
+    },
+    {
+      "status": null,
+      "question": "How does using your phone/computer influence your life?",
+      "subquestions": [
+        {
+          "question": "How long does it take you to use your phone/computer after waking up?",
+          "index": 0
+        },
+        {
+          "question": "How many hours do you use your devices? Computer, phone, tablet, etc.",
+          "index": 1
+        }
+      ],
+      "category": "lifestyle",
+      "researcher": "no",
+      "photo1": "img/c1.png",
+      "photo2": "img/c2.png",
+      "name": "Raymond Arevalo",
+      "index": 11
     }
   ],
   "user": {
@@ -399,6 +439,13 @@
         "categories": "weight-loss",
         "question0": "",
         "question1": ""
+      },
+      {
+        "categories": "weight-gain",
+        "question0": "Is the earth flat?",
+        "question1": "Have you ever questioned if the earth is flat?",
+        "question2": "Is there proof the earth is a sphere?",
+        "name": "Raymond Arevalo"
       }
     ],
     "contributions": [
@@ -512,6 +559,190 @@
         "arrayindex": 1,
         "photo1": "img/b1.png",
         "photo2": "img/b2.png"
+      },
+      {
+        "currentstatus": "done",
+        "question": "How do sleep levels vary by age group?",
+        "subquestions": [
+          {
+            "question": "How many hours do you sleep on average per night?",
+            "reply": "i"
+          },
+          {
+            "question": "How many hours do you take naps daily on average?",
+            "reply": "i"
+          },
+          {
+            "question": "Are you currently enrolled in school/college?",
+            "reply": "i"
+          },
+          {
+            "question": "Are you suffering from any form of sleep disorders? Explain.",
+            "reply": "i"
+          },
+          {
+            "question": "Do you follow any sort of bi-phasic sleep cycle? Explain.",
+            "reply": "i"
+          },
+          {
+            "question": "How often in an average month do you go for at least 24 hours without sleeping?",
+            "reply": "i"
+          }
+        ],
+        "breakdown": {
+          "carbs": "30",
+          "carbstype": "grams",
+          "protein": "20",
+          "proteintype": "grams",
+          "saturated": "33",
+          "saturatedtype": "grams",
+          "trans": "10",
+          "transtype": "grams",
+          "sugars": "100",
+          "sugarstype": "milligrams"
+        },
+        "selfinfo": {
+          "height": "72",
+          "heighttype": "inches",
+          "weight": "140",
+          "weighttype": "pounds",
+          "age": "09/03/1996",
+          "ethnicity": "hispanic"
+        },
+        "sendto": "Dr. Smith",
+        "comments": "Can you stop?",
+        "identity": "user123",
+        "category": "sleep",
+        "researcher": "yes",
+        "name": "Dr. Allen",
+        "index": "2",
+        "arrayindex": 2,
+        "photo1": "img/c1.png",
+        "photo2": "img/c2.png"
+      },
+      {
+        "currentstatus": null,
+        "question": "Do stress levels affect daily productivity?",
+        "subquestions": [
+          {
+            "question": "What is your systolic blood pressure level? If not exactly known, is your level healthy or not?",
+            "reply": ""
+          },
+          {
+            "question": "How many hours a day do you work and/or go to school?",
+            "reply": ""
+          },
+          {
+            "question": "How many hours a day do you spend watching TV, using social media, doing other leisure activities etc.?",
+            "reply": ""
+          },
+          {
+            "question": "How much caffeine do you consume daily?",
+            "reply": ""
+          },
+          {
+            "question": "How involved are you in stress-reducing activities such as exercise, meditation etc.?",
+            "reply": ""
+          },
+          {
+            "question": "Do you feel that stress brings a sense of alertness or does it bring anxiety to you? Explain.",
+            "reply": ""
+          }
+        ],
+        "breakdown": {
+          "carbs": "10",
+          "carbstype": "grams",
+          "protein": "",
+          "proteintype": "grams",
+          "saturated": "",
+          "saturatedtype": "grams",
+          "trans": "",
+          "transtype": "grams",
+          "sugars": "",
+          "sugarstype": "grams"
+        },
+        "selfinfo": {
+          "height": "75",
+          "heighttype": "inches",
+          "weight": "155",
+          "weighttype": "pounds",
+          "age": "09/09/1996",
+          "ethnicity": "black"
+        },
+        "sendto": [],
+        "comments": "",
+        "identity": "",
+        "category": "lifestyle",
+        "researcher": "yes",
+        "name": "Dr. Brown",
+        "index": "3",
+        "arrayindex": "3",
+        "photo1": "img/d1.png",
+        "photo2": "img/d2.png"
+      },
+      {
+        "currentstatus": "done",
+        "question": "Do naps throughout the day help with productivity?",
+        "subquestions": [
+          {
+            "question": "How often do you take naps throughout an average day?",
+            "reply": ""
+          },
+          {
+            "question": "If you do take naps, how long do you take naps daily on average?",
+            "reply": ""
+          },
+          {
+            "question": "How long do you sleep at night on average?",
+            "reply": ""
+          },
+          {
+            "question": "Do you follow some sort of bi-phasic sleep cycle or other unique sleep schedules? Explain.",
+            "reply": ""
+          },
+          {
+            "question": "Do you usually feel energized after taking naps? Explain.",
+            "reply": ""
+          },
+          {
+            "question": "How long can you perform work/school work etc. in a stretch on average (include lunch breaks, streching etc.)?",
+            "reply": ""
+          },
+          {
+            "question": "Do you have any sleeping disorders, circadian rhythm issues, or habits that negatively affect daily productivity? Explain.",
+            "reply": ""
+          }
+        ],
+        "breakdown": {
+          "carbs": "",
+          "carbstype": "grams",
+          "protein": "",
+          "proteintype": "grams",
+          "saturated": "",
+          "saturatedtype": "grams",
+          "trans": "",
+          "transtype": "grams",
+          "sugars": "",
+          "sugarstype": "grams"
+        },
+        "selfinfo": {
+          "height": "",
+          "heighttype": "inches",
+          "weight": "",
+          "weighttype": "pounds",
+          "age": "",
+          "ethnicity": "hawaiian"
+        },
+        "sendto": [],
+        "comments": "",
+        "identity": "",
+        "category": "sleep",
+        "researcher": "yes",
+        "name": "Dr. Pepper",
+        "index": "4",
+        "arrayindex": 4,
+        "photo1": "img/e1.png",
+        "photo2": "img/e2.png"
       }
     ]
   }

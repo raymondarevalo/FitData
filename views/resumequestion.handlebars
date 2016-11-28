@@ -24,7 +24,7 @@
     </div>
   </nav>
   {{#responses}}
-  <div class="container">
+  <div class="container" style = "margin-bottom: 40px;">
     <br><br>
     <form id ="answerquestionForm" role="form" method="get" action="/resumesaveresponse">
       <div class = "row">
@@ -34,7 +34,108 @@
           </div>
           <progress class="progress progress-striped" id ="progress-extended" value="10" max="100"></progress>
 
-          <div class="step well">
+
+
+          <!-- Personal Info -->
+          <div class="step well" style ="margin-bottom: 40px;">
+            <h2>Personal Info</h2>
+
+            <!-- Height -->
+            <div class="form-group">
+              <p>Height </p>
+              <input type="text" class="form-control left-option" name="height" value ="{{selfinfo.height}}">
+              <select class = "form-control right-option" id = "exampleSelect1" name ="heighttype">
+                <option value="inches">Inches</option>
+                <option value="centicemters">Centimeters</option>
+              </select>
+            </div>
+
+            <!-- Weight -->
+            <div class="form-group question-group">
+              <p>Weight</p>
+              <input type="text" class="form-control left-option" name="weight" value="{{selfinfo.weight}}">
+              <select class = "form-control right-option" name ="weighttype">
+                <option value="pounds">Pounds</option>
+                <option value="kilograms">Kilograms</option>
+              </select>
+            </div>
+
+            <!-- Age -->
+            <div class="form-group question-group">
+              <label for="usr">Birthday</label>
+              <input type="text" class="form-control question-size" id="usr" name="age" value="{{selfinfo.age}}" placeholder="MM/DD/YY">
+            </div>
+
+            <!-- Race/Ethncity -->
+            <div class="form-group">
+              <p>Race/Ethnicity</p>
+              <select class = "form-control question-size" name ="ethnicity">
+                <option value="asian">Asian</option>
+                <option value="black">Black</option>
+                <option value="hawaiian">Native Hawaiian</option>
+                <option value="hispanic">Hispanic</option>
+                <option value="White">White</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Breakdown -->
+          <div class="step well question-section">
+            <h2>Breakdown</h2>
+
+            <!-- Carbs -->
+            <div class="form-group">
+              <p>Amount of Carbs</p>
+              <input type="text" class="form-control left-option" id="usr" name="carbs" value="{{breakdown.carbs}}">
+              <select class = "form-control right-option" name ="carbstype">
+                <option value="grams">Grams</option>
+                <option value="milligrams">Milligrams</option>
+              </select>
+            </div>
+
+            <!-- Protein -->
+            <div class="form-group question-group">
+              <p>Amount of Protein</p>
+              <input type="text" class="form-control left-option" id="usr" name="protein" value="{{breakdown.protein}}">
+              <select class = "form-control right-option" name ="proteintype">
+                <option value="grams">Grams</option>
+                <option value="milligrams">Milligrams</option>
+              </select>
+            </div>
+
+            <!-- Saturated Fat -->
+            <div class="form-group question-group">
+              <p>Amount of Saturated Fat </p>
+              <input type="text" class="form-control left-option" id="usr" name = "saturated" style="{{breakdown.saturated}}">
+              <select class = "form-control right-option" name ="saturatedtype">
+                <option value="grams">Grams</option>
+                <option value="milligrams">Milligrams</option>
+              </select>
+            </div>
+
+            <!-- Transfat -->
+            <div class="form-group question-group">
+              <p> Amount of Transfat</p>
+              <input type="text" class="form-control left-option" id="usr" name ="trans" style="{{breakdown.trans}}">
+              <select class = "form-control right-option" name ="transtype">
+                <option value="grams">Grams</option>
+                <option value="milligrams">Milligrams</option>
+              </select>
+            </div>
+
+            <!-- Sugars -->
+            <div class="form-group question-group">
+              <p>Amount of Sugars</p>
+              <input type="text" class="form-control left-option" id="usr" name ="sugars" style="{{breakdown.sugars}}">
+              <select class = "form-control right-option" name ="sugarstype">
+                <option value="grams">Grams</option>
+                <option value="milligrams">Milligrams</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Questions -->
+          <div class="step well question-section">
             <h2>{{question}}</h2>
             <div class = "form-group" style = "display: none;">
               <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question">{{question}}</textarea>
@@ -51,8 +152,6 @@
             </div>
 
             {{/subquestions}}
-
-
 
             <div style = "display: none;">
               <div class="form-group">
@@ -76,133 +175,70 @@
                 <input type="text" class="form-control" id="usr" name="arrayindex" value = "{{arrayindex}}">
               </div>
             </div>
-
           </div>
 
-
-
-          <!--  -->
-          <div class="step well">
-            <h2>Breakdown</h2>
-            <div class="form-group">
-              <label for="usr">Amount of carbs (grams)</label>
-              <input type="text" class="form-control" id="usr" name="carbs" value="{{breakdown.carbs}}">
-            </div>
-            <div class="form-group">
-              <label for="usr">Amount of protein (grams)</label>
-              <input type="text" class="form-control" id="usr" name="protein" value="{{breakdown.protein}}">
-            </div>
-            <div class="form-group">
-              <label for="usr">Amount of Saturated fat (grams)</label>
-              <input type="text" class="form-control" id="usr" name = "saturated" value="{{breakdown.saturated}}">
-            </div>
-            <div class="form-group">
-              <label for="usr">Amount of trans fat (grams)</label>
-              <input type="text" class="form-control" id="usr" name ="trans" value = "{{breakdown.trans}}">
-            </div>
-            <div class="form-group">
-              <label for="usr">Amount of Sugars (grams)</label>
-              <input type="text" class="form-control" id="usr" name ="sugars" value="{{breakdown.sugars}}">
-            </div>
-
-
-          </div>
-          <div class="step well">
-            <h2>Personal Info</h2>
-            <div class="form-group">
-              <label for="usr">Height</label>
-              <input type="text" class="form-control" id="usr" name="height" value ="{{selfinfo.height}}">
-            </div>
-            <div class="form-group">
-              <label for="usr">Weight</label>
-              <input type="text" class="form-control" id="usr" name="weight" value="{{selfinfo.weight}}">
-            </div>
-            <div class="form-group">
-              <label for="usr">Body Fat</label>
-              <input type="text" class="form-control" id="usr" name="fat" value="{{selfinfo.fat}}">
-            </div>
-            <div class="form-group">
-              <label for="usr">Age</label>
-              <input type="text" class="form-control" id="usr" name="age" value="{{selfinfo.age}}">
-            </div>
-            <div class="form-group">
-              <label for="usr">Ethnicity</label>
-              <input type="text" class="form-control" id="usr" name="ethnicity" value="{{selfinfo.ethnicity}}">
-            </div>
-
-
-          </div>
-          <div class="step well">
+          <!-- Other -->
+          <div class="step well question-section">
             <h2>Other</h2>
 
-
-            <div class="form-check">
-              <label for="usr">Send To</label>
+            <div class="form-check question-other">
+              <label for="usr">Send To</label> <br>
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name = "sendto" value="Dr. Smith"> Dr. Smith
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name = "sendto" value="Dr. Hariharan"> Dr. Hariharan
               </label>
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Coke"> Dr. Coke
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Chan"> Dr. Chan
               </label>
               <label class="form-check-label">
                 <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Smith"> Dr. Smith
               </label>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Huynh"> Dr. Huynh
+              </label>
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" aria-label="..." name="sendto" value="Dr. Lopez"> Dr. Lopez
+              </label>
             </div>
-            <div class = "form-group">
+
+            <div class = "form-group questions-other">
               <p for ="exampleTextArea">Comments</p>
               <textarea class = "form-control" id="exampleTextArea" rows="5" name ="comments">{{comments}}</textarea>
             </div>
 
 
-            <p for="exampleTextArea">Identity<p>
-              <label class="form-check-inline">
-                <input class="form-check-input" type="radio" name="identity" id="inlineRadio1" value="user123"> User123
-              </label>
-              <label class="form-check-inline">
-                <input class="form-check-input" type="radio" name="identity" id="inlineRadio2" value="anonymous"> Anonymous
-              </label>
+            <div class ="question-other">
+              <p for="exampleTextArea">Identity<p>
+                <label class="form-check-inline">
+                  <input class="form-check-input" type="radio" name="identity" id="inlineRadio1" value="user123"> User123
+                </label>
+                <label class="form-check-inline">
+                  <input class="form-check-input" type="radio" name="identity" id="inlineRadio2" value="anonymous"> Anonymous
+                </label>
+              </div>
             </div>
 
             <!-- left -->
             <div style = "float: left;">
-              <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
-              <button class="btn btn-secondary" name = "submit" value="savequit">Save and Quit</button>
+              <a href = "/">  <button type="button" class="btn btn-danger question-size">Quit</button></a>
+              <button class="btn btn-secondary question-size" name = "submit" value="savequit">Save and Quit</button>
             </div>
 
             <!-- right -->
             <div style = "float: right;">
-              <button type="button" class="action back btn btn-info">Back</button>
-              <button type="button" class="action next btn btn-info">Next</button>
-              <button class="action submit btn btn-success" name="submit" value="save">Submit</button>
+              <button type="button" class="action back btn btn-info question-size">Back</button>
+              <button type="button" class="action next btn btn-info question-size">Next</button>
+              <button class="action submit btn btn-success question-size" name="submit" value="save">Submit</button>
             </div>
 
           </div>
         </div>
-        <br> <br>
-        <!--
-        <div class = "row">
-        <div class = "col-xs-12 col-sm-4 col-md-4">
-        <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
-        <button class="btn btn-info" name = "submit" value="savequit">Save and Quit</button>
-        <button class="action submit btn btn-success" name="submit" value="save">Save</button>
-      </div>
-
-      <div class ="col-xs-12 col-sm-8 col-md-8">
-      <button type="button" class="action back btn btn-info">Back</button>
-      <button type="button" class="action next btn btn-info">Next</button>
-
-
+      </form>
     </div>
-  </div>
--->
+    {{/responses}}
 
-</form>
-</div>
-{{/responses}}
 
-<!-- FOOTER -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-<script src="/js/forms.js"></script>
-</body>
+    <!-- FOOTER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script src="/js/forms.js"></script>
+  </body>

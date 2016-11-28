@@ -23,46 +23,28 @@
       </ul>
     </div>
   </nav>
-  <div class = "container">
-    <br>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-3">Ask Scientific Question</h1>
-        <p class="lead">Help researchers come up with research questions.</p>
-      </div>
-    </div>
-    <form id ="askquestionForm" role="form" method="get" action="/submitquestion">
-      <!-- Choose a category -->
-      <div class = "form-group">
-        <label for="exampleSelect1">Categories</label>
-        <select class = "form-control" id = "exampleSelect1" name ="categories">
-          <option value="weight-loss">Weight Loss</option>
-          <option value="weight-gain">Weight Gain</option>
-          <option value="exercise">Exercise</option>
-          <option value="lifestyle">Lifestyle</option>
-        </select>
-      </div>
 
-      <div class = "form-group">
+  <h2>Ask Question</h2>
+  <form id ="askquestionForm" role="form" method="get" action="/submitquestion">
+    <!-- Choose a category -->
+    <div class = "form-group">
+      <label for="exampleSelect1">Categories</label>
+      <select class = "form-control" id = "exampleSelect1" name ="categories">
+        <option value="weight-loss">Weight Loss</option>
+        <option value="weight-gain">Weight Gain</option>
+        <option value="exercise">Exercise</option>
+        <option value="lifestyle">Lifestyle</option>
+      </select>
+    </div>
+    <div class = "form-group">
         <label for ="exampleTextArea">Main Research Question</label>
         <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question0"></textarea>
-      </div>
+    </div>
 
-      <div>
-        <p style="color: red;" id = "submust"> &#42; Must have at least one sub research question</p>
-        <button id="addSRQId" type ="button" value ="addSRQ" onclick="addSRQ()" class ="btn btn-warning">Add Sub Research Question</button>
-      </div>
-      <div style = "float: left;">
-        <br> <br>
-        <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
-        <button type="submit" value ="done" class="btn btn-primary" id = "asksubmit" style ="display: none;">Submit</button>
-      </div>
-    </form>
+    <button id="addSRQId" type ="button" value ="addSRQ" onclick="addSRQ()">Add Sub Research Question</button>
+    <button type="submit" value ="done" class="btn btn-primary">Submit</button>
+  </form>
 
-    <br><br>
-
-    <br><br><br>
-  </div>
 
   <!-- Choose a category -->
 
@@ -71,6 +53,7 @@
   <!-- Subresearch quesiton -->
 
 
+  <a href = "/">  <button type="button" class="btn btn-danger">Quit</button></a>
   <!--<a href = "/reviewquestion.html">  <button type="button" class="btn btn-default">Done Creating a Question</button></a>-->
   <!-- FOOTER -->
 

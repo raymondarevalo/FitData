@@ -34,7 +34,7 @@ $("#askquestionForm").on('submit', function(e) {
 
 /* Adds sub research question textbox to form */
 function addSRQ () {
-  var count = $('#askquestionForm').children().length - 3;
+  var count = $('#askquestionForm').children().length - 8;
 
   /* create a new div */
   var newDiv = document.createElement("div");
@@ -42,7 +42,7 @@ function addSRQ () {
 
   /* create a new label */
   var newLabel = document.createElement("label");
-  newLabel.innerHTML = "Sub Research Question - " + count.toString();
+  newLabel.innerHTML = "Survey question #" + count.toString();
   newDiv.appendChild(newLabel);
 
 
@@ -55,7 +55,7 @@ function addSRQ () {
   newDiv.appendChild(newTextBox);
 
   //$("#askquestionForm").append(newDiv);
-  $(newDiv).insertBefore( "#addSRQId" );
+  $(newDiv).insertBefore( "#SRQButton" );
 
   /* Make submit viewable */
   document.getElementById('asksubmit').style.display = 'inline';
