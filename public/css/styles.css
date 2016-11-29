@@ -99,6 +99,11 @@ p {
 	bottom: 30px;
 	width: 100%;
 }
+
+.index-icon:hover{
+	background-color: transparent; text-decoration: none;
+}
+
 @media (max-width: 991px) {
 	.index-down {
 		display: none;
