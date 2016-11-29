@@ -36,7 +36,7 @@
 
   <!-- Personal Info -->
   <div class="step well" style = "margin-bottom: 40px;">
-    <h2>Personal Info</h2>
+    <h2 class="question-two">Personal Info</h2>
 
     <!-- Height -->
     <div class="form-group">
@@ -61,7 +61,7 @@
 
     <!-- Age -->
     <div class="form-group question-group">
-      <label for="usr">Birthday</label>
+      <p>Birthday</p>
       <input type="text" class="form-control question-size" id="usr" name="age" placeholder="MM/DD/YY">
     </div>
 
@@ -80,8 +80,7 @@
 
   <!-- Breakdown -->
   <div class="step well question-section">
-    <h2>Daily Intake</h2>
-
+    <h2 class ="question-two">Daily Intake</h2>
     <!-- Carbs -->
     <div class="form-group">
       <p>Amount of Carbs</p>
@@ -138,7 +137,7 @@
   <!-- Questions -->
   <div class="step well question-section">
     {{#questions}}
-    <h2>{{question}}</h2>
+    <h2 class="question-two">{{question}}</h2>
     <div class = "form-group" style = "display: none;">
       <textarea class = "form-control" id="exampleTextArea" rows="5" name ="question">{{question}}</textarea>
     </div>
@@ -178,7 +177,7 @@
 
   <!-- Other -->
   <div class="step well question-section">
-    <h2>Other</h2>
+    <h2 class ="question-two">Other</h2>
 
     <div class="form-check question-other">
       <label for="usr">Send To</label> <br>

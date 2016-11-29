@@ -10,9 +10,12 @@
   "license": "MIT",
   "main": "server.js",
   "dependencies": {
+    "animate.css": "^3.5.2",
+    "csshake": "^1.5.1",
     "express": "3.x",
     "express3-handlebars": "^0.5.2",
     "handlebars": "^4.0.5",
+    "hover.css": "^2.0.2",
     "jQuery": "^1.7.4",
     "jquery": "^3.1.1",
     "jsonfile": "^2.4.0"

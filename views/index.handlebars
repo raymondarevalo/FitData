@@ -4,6 +4,7 @@
   <title>FitData</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake-slow.min.css">
   <link href = "css/styles.css" rel = "stylesheet">
 </head>
 <body>
@@ -24,44 +25,70 @@
     </div>
   </nav>
   <!-- BODY -->
+
+
   <section id = "tbody-id" class = "tbody-class" style = "margin-top: 100px;">
     <div class = "container">
       <div class = "row">
-        <div class = "col-lg-3" style = "text-align: center;">
-          <a href = "/askquestion" title = "YOOO"> <img src ="img/edit.png"></a>
-          <p>Ask Health Question</p>
+
+        <!-- Step 1 -->
+        <div class = "col-lg-3">
+          <div class ="index-step">
+            <h3 class ="index-color">Step 1</h3>
+            <a href = "/askquestion" title = "Create Research Project"> <img class="hvr-grow" src ="img/edit.png"></a>
+            <p class ="index-color">Create Reseach Project</p>
+          </div>
         </div>
+
+        <!-- Step 2 -->
         <div class = "col-lg-3" style ="text-align: center;">
-          <a href = "/choosequestion"><img src ="img/file.png"></a>
-          <p>Answer Health Question</p>
+          <div class ="index-step">
+            <h3 class ="index-color">Step 2</h3>
+            <a href = "/choosequestion"><img src ="img/file.png"></a>
+            <p class ="index-color">Answer Survey Questions</p>
+          </div>
         </div>
+
+        <!-- Step 3 -->
         <div class = "col-lg-3" style = "text-align: center;">
-          <a href = "/resume"><img src ="img/list.png"></a>
-          <p>Resume Contribution</p>
+          <div class ="index-step">
+            <h3 class ="index-color">Step 3</h3>
+            <a href = "/resume"><img src ="img/list.png"></a>
+            <p class ="index-color">Resume Answering</p>
+          </div>
         </div>
+
+        <!-- Step 4 -->
         <div class = "col-lg-3" style = "text-align: center;">
-          <a href = "/previouscontribution"><img src ="img/success.png"></a>
-          <p>Previous Contributions</p>
+          <div class ="index-step">
+            <h3 class ="index-color">Step 4</h3>
+            <a href = "/previouscontribution"><img src ="img/success.png"></a>
+            <p class ="index-color">Previous Contributions</p>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class ="index-down">
+      <a id="down-id" href="#bbody-id" title = "Tutorial"><img class ="shake-slow" src ="img/down.png" href ="#bbody-id"></a>
+    </div>
   </section>
 
-<br> <br> <br>
   <!-- bottom body -->
   <section id = "bbody-id" class = "bbody-class">
-      <div class = "container">
-        <div class = "row">
-          <div class = "col-lg-12" style = "text-align: center;">
-            <h2>Tutorial</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/N_qG2HQKqVk" frameborder="0" allowfullscreen></iframe>
-          </div>
-
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-lg-12 bbody-content">
+          <h1 class ="bbody-text">Tutorial</h1>
+          <iframe class ="bbody-tutorial" src="https://www.youtube.com/embed/N_qG2HQKqVk" frameborder="0" allowfullscreen></iframe>
         </div>
+
       </div>
+    </div>
   </section>
   <!-- FOOTER -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script src ="js/index.js"></script>
 </body>
